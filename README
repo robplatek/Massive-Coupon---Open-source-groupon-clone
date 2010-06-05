@@ -1,0 +1,19 @@
+Massive Coupon - An Open Source Crowd Buying engine
+
+Here it is boys and girls ... a decent starting point for your own Groupon clone. I wrote this over 2 weekends and spent some coin designing it - and now I'm giving it all away for FREE!
+
+Why am I doing this?  Why not?  I decided not to launch due to increasing competition - so my loss is your gain!  I hope to see some cool development and branches come out of this thing.
+
+Features:
+
+- Nice Design (all html / css / graphics included!)
+- Basic Groupon functionality (deal timeouts, tipping point, checkout, paypal express integration)
+
+
+The engine is written in Python + Django .. any decent Django coder should be able to get it up and running.  I didn't have too much time to clean it up .. so it's 'as is'.
+
+Good luck and happy group buying!
+
+
+Rob Styles
+SocialWire.ca
