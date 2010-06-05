@@ -1,0 +1,86 @@
+{% load facebook_tags %}
+
+
+                             <div id="header">
+				<div class="h-holder">
+					<div class="add-nav">
+						<div class="l"></div>
+						<div class="c">
+							<ul>
+								<li><a id="city-slider-link" class="inner-link" href="#">Visit more cities</a></li>
+								<li><a id="email-slider-link" class="inner-link" href="/toronto/subscribe/">Get daily coupon alert</a></li>
+								<li><a href="/contact-us/">Contact us</a></li>
+							</ul>
+						</div>
+						<div class="r"></div>
+					</div>
+					<div class="header-main">
+						<div class="t"></div>
+						<div class="c">
+							<div class="logo-box">
+								<strong class="logo"><a href="/deals/groupon-clone/">MassiveCoupon.com</a></strong>
+								<strong class="slogan">Massive Group Buying Power.</strong>
+							</div>
+							<div class="daily-deals-box">
+								<p><span class="daily-deals">Daily deals on the best in</span> <strong>Your City</strong></p>
+							</div>
+							<div class="total-box">
+								<dl>
+									<dt>Total Dollars Saved</dt>
+									<dd>$0</dd>
+								</dl>
+								<dl>
+									<dt>Massive Coupons Bought</dt>
+									<dd>0</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="b"></div>
+					</div>
+
+					<div class="navbar">
+						<div class="l"></div>
+						<div class="c">
+							<ul id="main-nav">
+								<li><a href="/deals/groupon-clone/">Today‘s Deal</a></li>
+						{% comment %}		<li><a href="/deals/groupon-clone/">Recent Deals</a></li> {% endcomment %}
+								<li><a href="/how-massive-coupon-works/">How it works</a></li>
+								<li><a href="#" target="_blank">Discussion</a></li>
+							</ul>
+							<a href="#wrapper" class="accessibility">back on top</a>
+							<div class="links">
+
+{% comment %}
+                                                               <form class="connect-button" name="login" method="post" action="{% if logged_in %}{% url facebook_connect %}{% else %}{% url facebook_login %}{% endif %}">
+                                                                 {% if next %}
+                                                                   <input type="hidden" name="next" value="{{ next }}" />
+                                                                 {% endif %}
+
+								<a class="connect-facebook" href="" onclick="facebookConnect(this.form);return false;">Connect with Facebook</a>
+                         
+                                                              </form>
+{% endcomment %}          
+
+                               {% if user.is_authenticated %}
+                                    <span style="float: left; margin: 9px 0 0 36px; color: white;"><label style="font-size: 80%; color: #eee;">Hello</label> <a href="/users/{{ request.user.id }}/{{ request.user }}/"></a><a href="" style="color: #fff;">{{ request.user.first_name }}</a>!</span> <a class="sign-out" href="/user/logout/">Logout</a>
+                               {% else %}
+    								<a class="sign-in" href="/user/login/">Sign In</a>
+                               {% endif %}
+							</div>
+						</div>
+						<div class="r"></div>
+					</div> <!-- end Navbar -->
+				</div>
+
+          <div id="user-msg-div" style="font-size: 180%; font-weight: bold; color: #D01E5E; padding-top: 15px; text-align: center; border-top:3px solid #D01E5E
+; border-bottom:3px solid #D01E5E; background: #ffe1e1; height: 40px; margin-bottom: 10px;">
+            Open source Groupon Clone!  livingsocial.com / Gilt Groupe / Groupon.com clone source <a href="http://github.com/robstyles/Massive-Coupon---Open-source-crowd-buying-enging" target="_blank">download</a> <span style="float:right; margin-right: 20px; font-size: 80%;"></span>
+          </div>
+
+    {%comment %}    {% if user_msg %}
+          <div id="user-msg-div" style="font-size: 180%; font-weight: bold; color: #D01E5E; padding-top: 12px; text-align: center; border-top:3px solid #D01E5E; border-bottom:3px solid #D01E5E; background: #ffe1e1; height: 40px; margin-bottom: 10px;">
+            {{ user_msg }}<span style="float:right; margin-right: 20px; font-size: 80%;"><a href="" id="user-msg-close">[ close ]</a></span>
+          </div>
+       {% endif %} {% endcomment %} 
+
+			</div> <!-- end header -->

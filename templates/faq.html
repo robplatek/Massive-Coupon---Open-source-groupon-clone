@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block extralinks %}
+{% endblock %}
+
+{% block extracss %}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+
+div.error-box  {
+    border: 1px solid #d00000;
+    background-color: #F79992;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 6px 12px;
+    color: white;
+}
+
+div.error-box div.title  {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+div.error-msg {
+    width: 250px;
+    color: #c00;
+    float: left;
+}
+
+
+.field {
+  width: 110px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+.double_field {
+  width: 230px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+
+.passwd_field {
+  width: 390px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+#quantity_box {
+  margin-bottom: 15px;
+}
+
+
+
+{% endblock extracss %}
+
+{% block extrascripts %}
+{% endblock %}
+
+
+{% block extrajs %}
+
+    function submitForm(form)
+    {
+      $.Watermark.HideAll();
+    }
+
+    $().ready(function(){
+
+
+      // Setup hint tooltips and error messages
+      {% for f in form %}
+      {% if f.help_text %}showHint('#{{ f.auto_id }}', '{{ f.help_text }}');{% endif %}
+      {% endfor %}
+
+
+  });
+
+{% endblock extrajs %}
+
+{% block content %}
+
+   <div id="main">
+			<div id="twocolumns">
+				<div class="twocolumns-holder">
+					<div id="content">
+						<div class="box">
+							<div class="box-t"></div>
+							<div class="box-c">
+								<h1><span class="mark" style="color: #000;">FAQ</span></h1>
+								<a href="#main-nav" class="accessibility">skip to main navigation</a>
+
+                 <!-- main content area div -->
+                <div>
+<h3>What is MassiveCoupon?</h3>
+
+<p>
+Each day, Massive Coupon features an unbeatable deal on the best stuff to do, see, eat, and buy in your city. By promising businesses a minimum number of customers, we get discounts you won't find anywhere else. We call it "massive group buying power!"
+</p>
+
+<h3>Do I have to sign up a group of people I know to get the deal?</h3>
+
+<p>
+Nope - our hundreds of thousands of members make up a big enough group. You'll probably want to invite people anyway, though — Massive Coupons are fun to use with friends, grandparents, and men who wear monocles.
+</p>
+
+<h3>I like today's deal - how do I get it?</h3>
+
+<p>
+Just click "BUY" before the offer ends at midnight. If the minimum number of people sign up, we'll charge your card and send you a link to print your Massive Coupon. If not enough people join, no one gets it (and you won't be charged), so invite your friends to make sure you get the deal!
+</p>
+
+
+                </div>
+
+
+
+							</div>
+							<div class="box-b"></div>
+						</div>
+
+					</div>
+				</div>
+			</div> 
+			
+         {% include "header.html" %}
+			
+		</div> <!-- end main -->
+	
+{% endblock content %}	

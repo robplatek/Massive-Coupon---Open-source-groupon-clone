@@ -1,0 +1,74 @@
+.hidden  {  
+    display: none;  
+}
+
+.toggle-link, .cmd  {
+    color: white;
+    background-color: #e18a10; 
+    padding: 1px 4px;
+    -moz-border-radius: 2px;
+    font-size: 77%;
+    text-decoration: none;
+}
+
+.help-list  {
+    border: 2px solid #CCD5E4;
+    background-color: #EFF2F7;
+    -moz-border-radius: 0.5em;
+    margin-bottom: 1em;
+    padding: 3px 5px;
+}
+.help-list ul li {
+    list-style-position: outside;
+    list-style-type: disc;
+    margin-left: 1.5em;
+}
+
+.form-body  { 
+}
+
+.form-label {
+    margin-top:20px;
+    margin-bottom: 10px;
+    font-size: 120%; 
+    color: #f19a20; 
+    font-weight: bold;
+}
+.form-label-highlight {
+    color: #e00;
+}
+
+div.fieldWrapper  {
+    padding: 2px;
+    margin: 3px 0;
+}
+div.fieldWrapper label  {
+    display: block; 
+    float: left;
+    text-align: right;
+    padding-right: 1em;
+    width: 150px;
+    font-family: tahoma;
+    font-size: 12.5pt;
+}
+div.fieldWrapper label.w200  {
+    width: 200px;
+}
+div.fieldWrapper label.w250  {
+    width: 250px;
+}
+div.fieldWrapper label.w300  {
+    width: 300px;
+}
+
+div.fieldWrapper input  {
+    border: 1px solid #bbb;
+    padding: 3px;
+    font-size: 11.5pt;
+    font-family: tahoma;
+}
+
+div.fieldWrapper input.focused  {
+    background-color: #ffff88;
+}
+

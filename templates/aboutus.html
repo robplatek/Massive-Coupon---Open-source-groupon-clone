@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block extralinks %}
+{% endblock %}
+
+{% block extracss %}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+
+div.error-box  {
+    border: 1px solid #d00000;
+    background-color: #F79992;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 6px 12px;
+    color: white;
+}
+
+div.error-box div.title  {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+div.error-msg {
+    width: 250px;
+    color: #c00;
+    float: left;
+}
+
+
+.field {
+  width: 110px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+.double_field {
+  width: 230px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+
+.passwd_field {
+  width: 390px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+#quantity_box {
+  margin-bottom: 15px;
+}
+
+
+
+{% endblock extracss %}
+
+{% block extrascripts %}
+{% endblock %}
+
+
+{% block extrajs %}
+
+    function submitForm(form)
+    {
+      $.Watermark.HideAll();
+    }
+
+    $().ready(function(){
+
+
+      // Setup hint tooltips and error messages
+      {% for f in form %}
+      {% if f.help_text %}showHint('#{{ f.auto_id }}', '{{ f.help_text }}');{% endif %}
+      {% endfor %}
+
+
+  });
+
+{% endblock extrajs %}
+
+{% block content %}
+
+   <div id="main">
+			<div id="twocolumns">
+				<div class="twocolumns-holder">
+					<div id="content">
+						<div class="box">
+							<div class="box-t"></div>
+							<div class="box-c">
+								<h1><span class="mark" style="color: #000;">About MassiveCoupon</span></h1>
+								<a href="#main-nav" class="accessibility">skip to main navigation</a>
+
+                 <!-- main content area div -->
+                <div>
+                    <h2>  </h2>
+                    <p style="margin-bottom: 25px;">
+MassiveCoupon was created in December of 2009 with a goal of shifting the power into the buyer’s hands to allow us to experience new and exciting things that our cities have to offer.
+<br><br>
+The concept is new to our cities and we think it is a perfect fit for our urban population. It’s pretty simple; we do our best to give people unbeatable deals everyday so they can comfortably try new and exciting things they may have not had a chance to try otherwise.
+<br><br>
+Without our community we’re really nothing. We really encourage our users to get involved in our daily discussions, ask questions, share the deals through Twitter, Facebook and Email, and really help spread the word of collective buying!
+ 
+                    </p>
+
+
+                </div>
+
+
+
+							</div>
+							<div class="box-b"></div>
+						</div>
+
+					</div>
+				</div>
+			</div> 
+			
+         {% include "header.html" %}
+			
+		</div> <!-- end main -->
+	
+{% endblock content %}	

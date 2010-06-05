@@ -1,0 +1,43 @@
+		<div id="footer">
+			<div class="contacts">
+				<div class="c-holder">
+					<a href="/contact-us/">Contact Us</a>
+				</div>
+			</div>
+			<div class="f-holder">
+				<div class="f-frame">
+					<div class="block">
+						<h3 class="color2">Company</h3>
+						<ul>
+							<li><a href="/about-us/">About</a></li>
+							<li><a href="/contact-us/">Contact Us</a></li>
+							<li><a href="/terms-and-conditions/">Terms, Privacy, Returns, Etc.</a></li>
+							<li><a href="#">Stalk Us On Twitter</a></li>
+							<li><a href="#">Send To A Friend</a></li>
+						</ul>
+					</div>
+					<div class="block">
+						<h3>Learn More</h3>
+						<ul>
+							<li><a href="/faq/">FAQ</a></li>
+							<li><a href="#">MassiveCoupon for Businesses</a></li>
+							<li><a href="#">Press</a></li>
+						</ul>
+					</div>
+					<div class="block">
+						<h3>Fun Stuff</h3>
+						<ul>
+							<li><a href="#">Suggest a Business</a></li>
+							<li><a href="#">Developers / API</a></li>
+							<li><a href="#">Affiliate Program</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="/toronto/subscribe/">Subscribe to Daily Email</a></li>
+						</ul>
+					</div>
+					<a class="logo3" href="#">MassiveCoupon.com</a>
+				</div>
+			</div>
+			<div class="copyright" style="float: right; width: 400px;"">
+				<p>&copy; {% now "Y" %} Social Wire, Inc. All Rights Reserved.</p>
+			</div>
+		</div> <!-- end footer -->

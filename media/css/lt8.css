@@ -1,0 +1,64 @@
+* html body{width:expression(document.documentElement.clientWidth < 1000 ? "1000px" : "auto");}
+#twocolumns {margin-top: expression(document.getElementById("header").offsetHeight + "px");}
+#header {margin-top: expression((0 - (this.offsetHeight + document.getElementById("twocolumns").offsetHeight)) + "px");}
+* html .header-main .b{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-header-main-b.png', sizingmethod='crop');
+	background:none;
+}
+* html .navbar .l{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-navbar-l.png', sizingmethod='crop');
+	background:none;
+}
+* html .navbar .r{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-navbar-r.png', sizingmethod='crop');
+	background:none;
+}
+* html #content .box-t{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-content-box-t.png', sizingmethod='crop');
+	background:none;
+}
+* html #content .box-b{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-content-box-b.png', sizingmethod='crop');
+	background:none;
+}
+* html #content .box2 .box-t{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-content-box2-t.png', sizingmethod='crop');
+	background:none;
+}
+* html #content .box2 .box-b{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-content-box2-b.png', sizingmethod='crop');
+	background:none;
+}
+* html .png{
+	position:relative;
+	behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "images/none.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}
+* html #sidebar .discuss .t{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-discuss-t.png', sizingmethod='crop');
+	background:none;
+}
+* html #sidebar .discuss .b{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-discuss-b.png', sizingmethod='crop');
+	background:none;
+}
+* html #sidebar .discuss .txt .bg{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-discuss-txt.png', sizingmethod='crop');
+	background:none;
+}
+* html #sidebar .sb-box .t{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-sb-box-t.png', sizingmethod='crop');
+	background:none;
+}
+* html #sidebar .sb-box .b{
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-sb-box-b.png', sizingmethod='crop');
+	background:none;
+}
+#sidebar .social-services li{
+	display:inline;
+	zoom:1;
+	margin:0 -4px 0 -3px;
+}

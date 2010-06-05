@@ -1,0 +1,313 @@
+{% extends "base.html" %}
+
+{% block extralinks %}
+{% endblock %}
+
+{% block extracss %}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+
+div.error-box  {
+    border: 1px solid #d00000;
+    background-color: #F79992;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 6px 12px;
+    color: white;
+}
+
+div.error-box div.title  {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+div.error-msg {
+    width: 250px;
+    color: #c00;
+    float: left;
+}
+
+
+.field {
+  width: 110px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+.double_field {
+  width: 230px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+
+.passwd_field {
+  width: 390px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+#quantity_box {
+  margin-bottom: 15px;
+}
+
+
+
+{% endblock extracss %}
+
+{% block extrascripts %}
+    <script type="text/javascript" src="/media/js/jquery.countdown.js"></script>
+{% endblock %}
+
+
+{% block extrajs %}
+    function CurrencyFormatted(amount)
+    {
+        var i = parseFloat(amount);
+        if(isNaN(i)) { i = 0.00; }
+        var minus = '';
+        if(i < 0) { minus = '-'; }
+        i = Math.abs(i);
+        i = parseInt((i + .005) * 100);
+        i = i / 100;
+        s = new String(i);
+        if(s.indexOf('.') < 0) { s += '.00'; }
+        if(s.indexOf('.') == (s.length - 2)) { s += '0'; }
+        s = minus + s;
+        return s;
+    }
+
+    function update_estimated_quote()
+    {
+      var total = 0;
+
+      if( parseInt( $("#id_quantity").val() ) > 0 ) {
+        total = parseFloat( {{ deal.deal_price }} * parseInt($("#id_quantity").val()) ) ;
+      }
+
+      $('#id_estimate').html('$' + CurrencyFormatted(total));
+
+    }
+
+    function submitForm(form)
+    {
+      $.Watermark.HideAll();
+    }
+
+    $().ready(function(){
+
+      $("#id_quantity").keyup(function(){
+        update_estimated_quote();
+      });
+
+      update_estimated_quote();
+
+      // Setup hint tooltips and error messages
+      {% for f in form %}
+      {% if f.help_text %}showHint('#{{ f.auto_id }}', '{{ f.help_text }}');{% endif %}
+      {% endfor %}
+
+
+  });
+
+{% endblock extrajs %}
+
+{% block content %}
+
+   <div id="main">
+			<div id="twocolumns">
+				<div class="twocolumns-holder">
+					<div id="content">
+
+            <div class="box">
+              <div class="box-t"></div>
+              <div class="box-c" style="height: 118px; padding-top: 0px;">
+
+                <form  class="dealcheckoutform" id="id_dealcheckoutform" method="POST" >
+
+                <h2 style="margin-top: 0px;">Your Purchase</h2>
+                <a href="#main-nav" class="accessibility">skip to main navigation</a>
+
+                <div>
+                  <table>
+                   <tr style="font-size: 110%; font-weight: bold; color: #555;">
+                      <td style="height: 25px; width: 300px;">Description</td>
+                      <td style="width: 100px; text-align: center;">Quantity</td>
+                      <td style="width: 150px; text-align: center;">Price</td>
+                      <td style="width: 150px; text-align: center;">Total</td>
+                   </tr>
+                   <tr height="1" width="100%" background="/media/images/blue-pixel.png"><td colspan="4" height="1"></td></tr>
+                   <tr style="font-size: 130%; font-weight: bold; ">
+                      <td style="height: 50px;">{{ deal.advertiser }}</td>
+                      <td style="text-align: center;"><input style="font-size: 110%; text-align: center;" type="text" size="2" value="1" name="quantity" id="id_quantity"></td>
+                      <td style="text-align: center;"> x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ deal.deal_price }} (CAN)</td>
+                      <td style="text-align: center;">=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="id_estimate" style="color: #000; font-size: 170%;">$0.00</span></td>
+                   </tr>
+                   <tr height="1" width="100%" background="/media/images/blue-pixel.png"><td colspan="4" height="1"></td></tr>
+                  </table>
+                </div>
+
+                <img style="margin-top: 10px; width: 160px; float: right;" src="/media/images/securepaypal.jpg">
+              </div>
+              <div class="box-b"></div>
+            </div>
+
+
+						<div class="box">
+							<div class="box-t"></div>
+							<div class="box-c" style="padding-top: 0px;">
+								<h1>Payment <img style="margin-top: 10px;" src="/media/images/lock-icon.png"></h1>
+                <p>Your credit card will be charged and your massive coupon will be ready within 24hrs</p>
+								<a href="#main-nav" class="accessibility">skip to main navigation</a>
+
+<div>
+
+    {% if must_login_error %}
+        <div class="error-box">
+            <div class="title">An account already exists for {{ must_login_email }}. Please sign in first.</div>
+        </div>
+    {% endif %}
+
+    {% if form.errors %}
+        <div class="error-box">
+            <div class="title">There was a problem, please see the error messages below.</div>
+            <div>Please correct fields marked with a red box.</div>
+        </div>
+    {% endif %}
+
+
+  <div class="clearfix">
+    <div style="font-weight: bold; font-size: 120%; margin-bottom: 10px;">Personal Information</div>
+    <div class="user_left" style="width: 300px; float: left;">
+      <div class="field"><label>Full Name:</label>{{ form.full_name }}<div class="error-msg">{% if form.errors.full_name %}Please enter your full name{% endif %}</div></div>
+
+      <div class="passwd_field"><span style="float:left; width: 140px;"><label style="display: block;">Password:</label>{{ form.password }}</span><span style="float:left;"><label style="display: block;">Password (confirm):</label>{{ form.password_verify }}</span><div class="error-msg">{% if form.errors.password %}{{ form.errors.password }}{% endif %}</div></div>
+
+{% comment %}
+      <div class="passwd_field"><label style="width: 100%; display:block;">Password:</label>{{ form.password }} Password (confirm):{{ form.password_verify }}</div>
+{% endcomment %}
+
+      <div class="field"><label>Email:</label>{{ form.email }}<div class="error-msg">{% if form.errors.email %}Please enter your email{% endif %}</div></div>
+
+      <div style="float: left; margin-top: 4px;"><input type="image" src="/media/images/btn_xpressCheckout.gif" value="Complete My Order" alt="Complete My Order" id="buy" onClick="submitForm(this.form);"/></div>
+
+
+    </div>
+
+    <div class="right" style="text-align: center; padding-left: 10px; padding-right: 10px; width: 330px; float: left; background: #DDEDCC">
+      <div style="height: 200px;">
+        <h2>Already have an Account?</h3>
+        <p style="line-height: 1.4;">If you have purchased a MassiveCoupon before, you can sign in using your email address.</p>
+        <a href="/user/login/"><img src="/media/images/signin-button.gif"></a>
+      </div>
+    </div>
+
+  </div>
+
+
+{% comment %}
+<div class="clearfix" style="margin-top: 20px;">
+
+  <div style="font-weight: bold; font-size: 120%; margin-bottom: 10px;">Billing Information</div>
+
+  <div id="leftbox" style="float: left; width: 300px;">
+    <div class="field"><label>Cardholder Name:</label>{{ form.cardholder_name }}<div class="error-msg">{% if form.errors.cardholder_name %}Please enter the name on your credit card{% endif %}</div></div>
+    <div class="field"><label>Card Type:</label>{{ form.type }}</div>
+    <div class="field"><label>Number:</label>{{ form.number }}<div class="error-msg">{% if form.errors.number %}Please enter your credit card number{% endif %}</div></div>
+    <div class="double_field"><label style="width: 100%; display:block;">Expiration Date:</label>{{ form.expiry_month }} {{ form.expiry_year }}</div>
+    <div class="field"><label>Security Code:</label>{{ form.security }}<div class="error-msg">{% if form.errors.security %}Please enter the CVV on the back of your credit card{% endif %}</div></div>
+  </div>
+  <div id="rightbox" style="float: left;">
+    <div class="field"><label>Billing Address:</label>{{ form.billing_address }}<div class="error-msg">{% if form.errors.billing_address %}Please enter your billing address{% endif %}</div></div>
+    <div class="field"><label>City:</label>{{ form.city }}<div class="error-msg">{% if form.errors.city %}Please enter your billing city{% endif %}</div></div>
+    <div class="field"><label>Postal Code:</label>{{ form.postalcode }}<div class="error-msg">{% if form.errors.postalcode %}Please enter your postal code{% endif %}</div></div>
+    <div class="field"><label>Province:</label>{{ form.province }}</div>
+    <div class="field"><label>Country:</label>{{ form.country }}</div>
+  </div>
+
+</div>
+{% endcomment %}
+
+{% comment %}<input type="submit"  value="Complete My Order" alt="Complete My Order" id="buy" onClick="submitForm(this.form);"/>
+  <a style="margin-left: 80px;" href="http://www.massivecoupon.com/">No Thanks.</a>
+{% endcomment %}
+
+</form>
+
+
+</div>
+
+							</div>
+							<div class="box-b"></div>
+						</div>
+
+					</div>
+					<div id="sidebar">
+						<div class="sb-box">
+							<div class="t"></div>
+							<div class="c">
+								<div class="content">
+									<h2>Got a Gift Card?</h2>
+									<ul class="social-services">
+										<li>
+											<a href="#">
+												<img alt="giftcard" src="/media/images/logo4.gif" width="69" height="30" />
+												<strong>>> Redeem<<</strong>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="b"></div>
+						</div>
+						<div class="sb-box">
+							<div class="t"></div>
+							<div class="c">
+								<div class="content">
+                                                                        <h2>Payment Questions?</h2>
+<p><h4>What happens after I buy?</h4>
+    Within a few minutes you'll receive an email receipt confirming that your card has been charged. Your receipt will describe how to print your MassiveCoupon, and your MassiveCoupon will include everything you need to know to redeem it. If the deal hasn't tipped yet, your receipt will arrive when it does. If the deal doesn't tip before time runs out, your card isn't charged and nobody gets the deal.</p>
+
+<p><h4>What if I buy as a gift?</h4>
+    When you buy a MassiveCoupon as a gift and choose to email it, an email will be sent to the recipient as soon as your card is charged, with all the instructions they need to claim their gift with a single click. If you chose to print your gift, you'll be able to do that on 'My Gifts' once your card has been charged.</p>
+
+<p><h4>Can I change or cancel my purchase?</h4>
+    Yes, you can modify your purchase up until the deal closes, as long as you haven't printed your MassiveCoupons - once you print, you can no longer change your purchase. You'll see all your purchases on 'My MassiveCoupons', with a link to 'Change my purchase' where appropriate.</p>
+
+<p><h4>Is this safe?</h4>
+    Extremely. This page is SSL encrypted (2048-bit) and all transactions are done through Paypal, the industry standard for internet payment. The little 'padlock' icon on your browser confirms this. At no time is your credit card information stored on our servers.</p>
+
+								</div>
+							</div>
+							<div class="b"></div>
+						</div>
+					</div>
+				</div>
+			</div> 
+			
+         {% include "header.html" %}
+			
+		</div> <!-- end main -->
+	
+{% endblock content %}	

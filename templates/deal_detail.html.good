@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+
+{% block extralinks %}
+{% endblock %}
+
+{% block extracss %}
+
+
+{% endblock extracss %}
+
+{% block extrascripts %}
+    <script type="text/javascript" src="/media/js/jquery.countdown.js"></script>
+{% endblock %}
+
+
+{% block extrajs %}
+
+  $().ready(function() 
+  {
+    $("#city-slider-link").click(function () {
+      $(".city-slider").slideToggle("slow");
+      return false;
+    });
+
+    $("#email-slider-link").click(function () {
+      $(".email-slider").slideToggle("slow");
+      return false;
+    });
+
+    var doneDay = new Date(2010, 2, 10);
+    $('div.buy-block div.txt').countdown({until: doneDay, layout: '<p><strong>{hn}</strong> {hl}</p><p><strong>{mn}</strong> {ml}</p><p><strong>{sn}</strong> {sl}</p>'});
+
+
+  });
+
+
+
+{% endblock extrajs %}
+
+{% block content %}
+
+{% comment %}
+    <div>
+        {% if user.is_authenticated %}
+        Welcome, {{ user }}
+        <a href="{% url user_logout %}">Log out</a>
+    {% else %}
+        Welcome, new user!
+        <a href="{% url user_login %}">Log in</a>
+    {% endif %}
+    </div>
+{% endcomment %}
+
+             <div id="main">
+			<div id="twocolumns">
+				<div class="twocolumns-holder">
+					<div id="content">
+						<div class="box">
+							<div class="box-t"></div>
+							<div class="box-c">
+								<h1><span class="mark">Today‘s Deal:</span> {{ deal.title }}</h1>
+								<a href="#main-nav" class="accessibility">skip to main navigation</a>
+								<div class="asides">
+									<div class="aside1">
+										<div class="visual">
+											<img alt="image description" src="/media/{{deal.image}}" width="438" height="291" />
+										</div>
+										<div class="fine-box">
+											<div class="fb-holder">
+												<div class="fb-block">
+													<h2>The fine print</h2>
+													<p>Expires on 07-26-2010</p>
+													<p>Limit 1 per visit, 555 Main street</p>
+													<p>No cash back</p>
+													<p><strong><a href="#">Read the deal FAQ</a></strong> forthe basics</p>
+												</div>
+												<div class="fb-block">
+													<h2>Main Highlights</h2>
+													<ul>
+														<li>Two locations</li>
+														<li>Great Services</li>
+														<li>Suitable for Valentine’s Special</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="buy">
+										<div class="b-frame">
+											<div class="price">
+												<div class="frame">
+													<a href="/deals/toronto/{{ deal.id }}/checkout/"><strong>${{ deal.deal_price|floatformat }}</strong> <span>Buy!</span></a>
+												</div>
+											</div>
+											<div class="details">
+												<div class="details-holder">
+													<dl>
+														<dt>Value</dt>
+														<dd><strong>${{ deal.retail_price|floatformat }}</strong></dd>
+													</dl>
+													<dl class="list2">
+														<dt>Discount</dt>
+														<dd><strong>{{ deal.discount_percentage|floatformat }}%</strong></dd>
+													</dl>
+													<dl class="list3">
+														<dt>You save</dt>
+														<dd><strong>${{ deal.discount_value|floatformat }}</strong></dd>
+													</dl>
+												</div>
+											</div>
+											<a class="buy-for-friend" href="#">
+												<span><strong>Buy it for a Friend</strong></span>
+											</a>
+											<div class="buy-block time">
+												<h3>Time left to buy</h3>
+												<div class="txt">
+                          {% comment %}
+													<p><strong>1</strong> hour</p>
+													<p><strong>59</strong> minutes</p>
+													<p><strong>22</strong> seconds</p>
+                          {% endcomment %}
+												</div>
+											</div>
+											<div class="buy-block">
+												<div class="deal-txt">
+													<h3>2611 Bought</h3>
+													<p>Tipped at 7:16am with {{ deal.tipping_point }} bought</p>
+												</div>
+												<div class="deal-state">
+													<strong>The Deal in On</strong>
+													<img alt="The Deal in On" src="/media/images/ico-deal-on.gif" width="38" height="38" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-b"></div>
+						</div>
+						<div class="box box2">
+							<div class="box-t"></div>
+							<div class="box-c">
+								<div class="content-area">
+									<p>Recent studies show that people who dance tend to possess above-average strength, endurance, and flexibility, as well as significantly less risk of getting served. Hone this vital skill with today's Massive Coupon: for S55, you get two 50-minute private lessons (a S150 value) from Rebecca Black at <a href="#">Kansas City Beginners Only</a> in Overland Park. Use this Massive Coupon for two private lessons, or put it towards a couple's lesson with your sweetheart or chauffeur. Call ahead to schedule your lesson.</p>
+									<p><a href="#">Rebecca Black</a> is a veteran of ballroom, Latin, and swing dancing, as well as a graduate of the Beginners Only USA Training Course. She'll tailor your private, 50-minute lessons for any upcoming weddings. Renaissance Faires, safety dances, and other special occasions, if you're all danced up with no place to go. choose from a variety of <a href="#">styles</a>, including East Coast Swing, Latin, or American Style Social Ballroom. By the time you're finished, you'll be fox-trotting, free-styling, and two-stepping your way straight to the nearest dance club.</p>
+									<h2>Reviews</h2>
+									<p>Many happy students testify that they are lighter on their feel thanks to Kansas City Beginners Only:</p>
+									<ul class="reviews-list">
+										<li>
+											<blockquote cite="#">
+												<div>
+													<q>We were so glad we took the time to learn a fun and graceful dance from such an awesome and patient dance Instructor.</q>
+													<cite> - <a href="#">Linda and Michael</a></cite>
+												</div>
+											</blockquote>
+										</li>
+										<li>
+											<blockquote cite="#">
+												<div>
+													<q>She was an amazing teacher that despite the challenges of teaching three Individuals with very little rhythm to dance remained patient and fun loving throughout.</q>
+													<cite> - <a href="#">Sara</a></cite>
+												</div>
+											</blockquote>
+										</li>
+										<li>
+											<blockquote cite="#">
+												<div>
+													<q>We highly recommend her services to any couple, whether you simply need to brush up on your skills, or need the complete Dancing 101 as we did!</q>
+													<cite> - <a href="#">Becky and Mitch</a></cite>
+												</div>
+											</blockquote>
+										</li>
+									</ul>
+									<div class="world-street-heading">
+										<h2 class="world-street">The world on the street:</h2>
+										<img class="png" alt="image description" src="/media/images/img2.png" width="58" height="66" />
+										<a class="logo2" href="#">MassiveCoupon.com</a>
+									</div>
+									<div class="world-txt">
+										<div class="holder">
+											<h3>Blah blah blah</h3>
+											<p>Although none of the other planets in our solar system contain crucial building blocks of life such as energy drinks and ranch ‚ dressing, Neptune comes closest to being inhabitable, due largely to the number of abandoned cities and conveniently placed piles of empty clothing.</p>
+										</div>
+									</div>
+								</div>
+								<div class="aside2">
+									<h2>The Company</h2>
+									<ul class="company-list">
+										<li>
+											<strong class="title">Kansas City Beginners Only</strong>
+											<p><a href="#">www.kansascitybeginnereonly.com</a></p>
+											<address>6635 W 151st Street<br /> Overland Park, Kansas 66223</address>
+											<p><a href="#">Map it!</a></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="box-b"></div>
+						</div>
+					</div>
+					<div id="sidebar">
+						<div class="discuss">
+							<div class="t"></div>
+							<div class="c">
+								<div class="content">
+									<div class="heading">
+										<h3>Discuss the Deal</h3>
+									</div>
+									<div class="txt">
+										<img class="photo png" alt="image description" src="/media/images/img3.png" width="45" height="45" />
+										<p><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</a></p>
+										<span class="bg">&nbsp;</span>
+									</div>
+									<div class="btm-txt">
+										<p><a href="#">Join the Discussion</a></p>
+										<p>7 comments</p>
+									</div>
+								</div>
+							</div>
+							<div class="b"></div>
+						</div>
+						<div class="sb-box">
+							<div class="t"></div>
+							<div class="c">
+								<div class="content">
+									<h2>Share this deal!</h2>
+									<ul class="social-services">
+										<li>
+
+<script type="text/javascript">
+function callPublish(msg, attachment, action_link) {
+  FB.ensureInit(function () {
+    FB.Connect.streamPublish('', attachment, action_link);
+  });
+}</script>
+
+											<a href="" onclick="callPublish('',{'name':'Rob thinks you should get a Massive Coupon','href':'http://massivecoupon.com','description':'Body text'},null);return false;">
+
+												<img alt="facebook" src="/media/images/ico-facebook.gif" width="63" height="53" />
+												<strong>facebook</strong>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img alt="twitter" src="/media/images/ico-twitter.gif" width="63" height="53" />
+												<strong>twitter</strong>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img alt="Email a friend!" src="/media/images/ico-email.gif" width="63" height="53" />
+												<strong>Email a friend!</strong>
+											</a>
+										</li>
+									</ul>
+									<div class="give-box">
+										<div class="holder">
+											<h3>Give a Massive Coupon as a Gift!</h3>
+											<div class="give-txt">
+												<img class="png" alt="image description" src="/media/images/ico-coupon.png" width="74" height="47" />
+												<a class="btn-buy-gift-card" href="#">Buy Gift Card</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="b"></div>
+						</div>
+						<div class="sb-box business">
+							<div class="t"></div>
+							<div class="c">
+								<div class="content">
+									<strong class="title"><span>Get Your Business on</span> <img alt="MassiveCoupon.com" src="/media/images/logo4.gif" width="69" height="30" /></strong>
+									<div class="business-txt">
+										<img alt="image description" src="/media/images/ico-business.gif" width="48" height="40" />
+										<p><a href="#"><strong>Learn <span>More</span></strong></a> about how MassiveCoupon can help bring tons of customers to your door</p>
+									</div>
+								</div>
+							</div>
+							<div class="b"></div>
+						</div>
+						<div class="sb-box">
+							<div class="t"></div>
+							<div class="c">
+								<div class="content">
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+									</p>
+									<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim .</p>
+								</div>
+							</div>
+							<div class="b"></div>
+						</div>
+					</div>
+				</div>
+			</div> 
+			
+         {% include "header.html" %}
+			
+		</div> <!-- end main -->
+	
+{% endblock content %}	

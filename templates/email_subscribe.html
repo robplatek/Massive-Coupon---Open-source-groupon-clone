@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block extralinks %}
+{% endblock %}
+
+{% block extracss %}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+
+div.error-box  {
+    border: 1px solid #d00000;
+    background-color: #F79992;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 6px 12px;
+    color: white;
+}
+
+div.error-box div.title  {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+div.error-msg {
+    width: 250px;
+    color: #c00;
+    float: left;
+}
+
+
+.field {
+  width: 110px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+.double_field {
+  width: 230px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+
+.passwd_field {
+  width: 390px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+#quantity_box {
+  margin-bottom: 15px;
+}
+
+
+
+{% endblock extracss %}
+
+{% block extrascripts %}
+{% endblock %}
+
+
+{% block extrajs %}
+
+    function submitForm(form)
+    {
+      $.Watermark.HideAll();
+    }
+
+    $().ready(function(){
+
+
+      // Setup hint tooltips and error messages
+      {% for f in form %}
+      {% if f.help_text %}showHint('#{{ f.auto_id }}', '{{ f.help_text }}');{% endif %}
+      {% endfor %}
+
+
+  });
+
+{% endblock extrajs %}
+
+{% block content %}
+
+   <div id="main">
+			<div id="twocolumns">
+				<div class="twocolumns-holder">
+					<div id="content">
+						<div class="box">
+							<div class="box-t"></div>
+							<div class="box-c">
+								<h1><span class="mark" style="color: #000;">Welcome to MassiveCoupon!</span> {{ deal.title }}</h1>
+								<a href="#main-nav" class="accessibility">skip to main navigation</a>
+
+<div>
+
+<div style="margin-bottom: 10px; font-size:135%; font-weight: bold; color: #555; line-height: 1.3;">
+Each day, MassiveCoupon emails you one exclusive, unbeatable deal on the best things to do, see, eat, and buy in {{ city }}.
+</div>
+
+    {% if form.errors %}
+        <div class="error-box">
+            <div class="title">There was a problem, please see the error messages below.</div>
+            <div>Please correct fields marked with a red box.</div>
+        </div>
+    {% endif %}
+
+<form  class="emailsubform" id="id_emailsubform" method="POST" style="border: 1px solid #ddd; background: #efe; padding: 20px; margin-bottom: 18px;" >
+
+<div style="font-size:135%; margin-bottom: 10px; line-height: 1.3;">Sign up so you don't miss a MassiveCoupon, and get ready to experience {{ city }} City at 50% to 90% off!  </div>
+
+  <div class="clearfix">
+      <div class="field" style="float: left; width: 260px;"><label style="color: #009ACE; font-size:125%; font-weight: bold;">Email:</label><br>{{ form.email }}<div class="error-msg">{% if form.errors.email %}Please enter your email{% endif %}</div></div>
+    <div class="field" style="float: left; width: 165px;"><label style="color: #009ACE; font-size:125%; font-weight: bold;">Choose your City:</label>{{ form.city }}</div>
+      
+
+    <input style="float: left; margin-top: 18px;" type="submit"  value="Subscribe" alt="Subscribe" id="subscribe" onClick="submitForm(this.form);"/>
+
+  </div>
+</form>
+
+<div>Our daily deals consist of:
+<h3>Restaurants, Theatre, Spas, Classes, Sporting Events, Bars, Museums, Concerts, Gyms and a whole lot more... </h3></div>
+
+</div>
+
+							</div>
+							<div class="box-b"></div>
+						</div>
+
+					</div>
+					<div id="sidebar">
+						<div class="sb-box">
+							<div class="t"></div>
+							<div class="c">
+								<div class="content">
+									<h2>Got a Gift Card?</h2>
+									<ul class="social-services">
+										<li>
+											<a href="#">
+												<img alt="giftcard" src="/media/images/logo4.gif" width="69" height="30" />
+												<strong>>> Redeem<<</strong>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="b"></div>
+						</div>
+					</div>
+				</div>
+			</div> 
+			
+         {% include "header.html" %}
+			
+		</div> <!-- end main -->
+	
+{% endblock content %}	

@@ -1,0 +1,21 @@
+=========================================
+Django Countries initial_data.xml Fixture
+=========================================
+
+Country list
+------------
+
+Last updated: 2007-08-20 - 244 countries.
+
+From these two resources:
+ - http://www.iso.ch/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/index.html
+ - http://unstats.un.org/unsd/methods/m49/m49alpha.htm 
+
+
+US States
+---------
+
+List last updated: 2007-08-20 - 59+6=65 states
+
+From:
+ - http://www.usps.com/ncsc/lookups/usps_abbreviations.html

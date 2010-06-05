@@ -1,0 +1,254 @@
+{% extends "base.html" %}
+
+{% block extralinks %}
+   <link type="text/css" rel="stylesheet" href="/media/js/css/jquery.clockpick.1.2.7.css" />
+{% endblock %}
+
+{% block extracss %}
+
+    div.fieldWrapper label {
+      width: 180px;
+    }
+
+
+    #id_rate, #id_hourly_rate, #id_estimated_time  {
+      width: 30px;
+    }
+
+    .qtip-content  {
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    div.period1 div.fieldWrapper select#id_hourmin_start1 { 
+      background: #eee;
+      height: 30px;
+      font-size: 130%;
+    }
+
+{% endblock %}
+
+{% block extrascripts %}
+  <script type="text/javascript" src="/media/js/jquery.clockpick.1.2.7.min.js"></script>
+{% endblock %}
+
+{% block extrajs %}
+
+    var rate_type = 0;
+
+    function submitForm()
+    {
+      $.Watermark.HideAll();
+      $('#id_longitude').val(longitude);
+      $('#id_latitude').val(latitude);
+      $('#id_radius').val(radius);
+      return true;
+    }
+
+    function change_rate_type(type)
+    {
+      if( type == 0 ) {
+        $('div#toggle-estimated-time').show();
+        rate_type = 0;
+      }
+      else {
+        $('div#toggle-estimated-time').hide(); 
+        rate_type = 1;
+      }
+    }
+
+    function change_period(period)
+    {
+      if( period == 0 ) {
+        $('div.period2').hide();
+        $('div.period1').show();
+      }
+      else {
+        $('div.period1').hide();
+        $('div.period2').show();
+      }
+    }
+
+    function CurrencyFormatted(amount)
+    {
+	var i = parseFloat(amount);
+	if(isNaN(i)) { i = 0.00; }
+	var minus = '';
+	if(i < 0) { minus = '-'; }
+	i = Math.abs(i);
+	i = parseInt((i + .005) * 100);
+	i = i / 100;
+	s = new String(i);
+	if(s.indexOf('.') < 0) { s += '.00'; }
+	if(s.indexOf('.') == (s.length - 2)) { s += '0'; }
+	s = minus + s;
+	return s;
+    }
+
+    function update_estimated_quote()
+    {
+      var total = 0;
+
+      if ( rate_type == 0 ) {
+        if( parseFloat( $("#id_rate").val() ) > 0 && parseFloat( $("#id_estimated_time").val()) > 0 ) {
+           total = parseFloat($("#id_rate").val()) * parseFloat($("#id_estimated_time").val()) ;
+        }
+      }
+      else {
+        if( parseFloat( $("#id_rate").val() ) > 0 ) {
+          total = parseFloat( $("#id_rate").val() );
+        }
+      }
+
+      $('#id_estimate').html('$' + CurrencyFormatted(total));
+
+    }
+
+    $().ready(function() 
+    {
+
+      $("#id_dates").change(function(){
+        change_period(this.selectedIndex);
+      });
+
+      $("#id_rate_type").change(function(){
+        change_rate_type(this.selectedIndex);
+        update_estimated_quote();
+      });
+
+
+      $("#id_rate").keyup(function(){
+        update_estimated_quote();
+      });
+      $("#id_hourly_rate").keyup(function(){
+        update_estimated_quote();
+      });
+      $("#id_estimated_time").keyup(function(){
+        update_estimated_quote();
+      });
+
+
+//      $("div.period1 div.fieldWrapper input#id_hourmin_start").selectbox();
+
+//      {% if period2 %}
+//      $("div.period2 div.fieldWrapper input#id_hourmin_start").selectbox();
+//      {% endif %}
+
+      // Focus and blur highlights
+      $('div.fieldWrapper input')
+        .focus(function(e) { $(e.target).addClass('focused'); })
+        .blur(function(e) { $(e.target).removeClass('focused'); });
+
+
+    //  create_toggle('[+] Add Hourly Rate', 'remove', 'toggle-hourly-rate');
+      create_toggle('[+] Add Note', 'remove', 'toggle-note');
+
+      // make enter work like tab
+      $('div.fieldWrapper input').keypress(preventEnterSubmit);
+
+      // Setup hint tooltips and error messages
+      {% for f in form %}
+      {% if f.help_text %}showHint('#{{ f.auto_id }}', '{{ f.help_text }}');{% endif %}
+      {% if f.errors %}showError('#{{ f.auto_id }}', '{% for e in f.errors %}{{ e }}\n{% endfor %}', true);{% endif %}
+      {% endfor %}
+
+      // Focus on initial field
+      //$('#id_service').focus();
+    });
+
+    function showHint(element, msg)
+    {
+      $(element).Watermark(msg);
+      //return showTip(element, msg);
+    }
+
+    function showError(element, msg, immediate)
+    {
+      showReady = immediate ? true : false;
+      return showTip(element, msg, { styleName: 'red', showReady: showReady, destroy: true });
+    }
+
+{% endblock %}
+
+{% block content %}
+
+<div style="font-size: 120%; color: #F19A20;">Job Offer for {{ service_request }}</div>
+<div style="">Title: {{ service_request.title }}</div>
+<div>Dek: {{ service_request.description }}</div>
+
+{% comment %}
+  flat_or_base_rate = forms.DecimalField(max_length=100, help_text="0")
+  hourly_rate = forms.DecimalField(max_length=100, help_text="0")
+  are_materials_included = forms.BooleanField(required=False, initial=True)
+  date = forms.DateField( widget=forms.widgets.DateInput())
+
+  hourmin_start = forms.ChoiceField(choices=HOURMIN, required=False, initial=19, widget=widgets.Select( attrs={'class':'sched_day_select'} ) )
+  hourmin_end = forms.ChoiceField(choices=HOURMIN, required=False, initial=35, widget=widgets.Select( attrs={'class':'sched_day_select'} ))
+
+  note = forms.CharField( widget=forms.widgets.Textarea() )
+  customer_travel_required = forms.BooleanField(required=False, initial=False)
+{% endcomment %}
+
+<form id="bidform" method="POST" enctype="multipart/form-data" onSubmit="return submitForm();" class="form-body">
+
+    <div class="form-label">Enter Your Price Quote  - <span>Time Remaining: {{ service_request.time_left }}</span></div>
+
+    <div class="fieldWrapper">
+        <label for="{{ form.rate.auto_id }}">How much do you charge? :</label> $ {{ form.rate }}  {{ form.rate_type}}
+    </div>
+
+    <div class="fieldWrapper" id="toggle-estimated-time">
+        <label for="{{ form.estimated_time.auto_id }}">Estimated Time:</label>{{ form.estimated_time }} Hours
+    </div>
+
+    <div class="fieldWrapper" style="height: 30px; font-size: 140%;">
+      <label>Estimated Quote:</label><div id="id_estimate" style="color: #3a3; font-size: 170%;">$0.00</div>
+    </div>
+
+    <div class="fieldWrapper">
+        <label for="{{ form.are_materials_included.auto_id }}">Includes Parts & Materials:</label> {{ form.are_materials_included }}
+    </div>
+
+<br><br>
+    {% if is_multiple_periods %}
+      <div class="fieldWrapper">
+        <label for="{{ form.dates.auto_id }}">Select Job Start Day:</label> {{ form.dates }}
+      </div>
+    {% else %}
+      <div class="fieldWrapper">
+        <label for="{{ form.dates.auto_id }}">Select Job Start Time on {{ start_date|date }}</label>
+      </div>
+    {% endif %}
+
+    <div class="period1">
+      <div class="fieldWrapper">
+          <label for="{{ form.hourmin_start1.auto_id }}">Select your Start Time:  </label> {{ form.hourmin_start1 }}
+      </div>
+    </div>
+
+    <div class="period2" style="display: none;">
+      <div class="fieldWrapper">
+          <label for="{{ form.hourmin_start2.auto_id }}">Select your Start Time:  </label> {{ form.hourmin_start2 }}
+      </div>
+    </div>
+
+    <br><br>
+    <div>Add a note for {{ service_request.user|capfirst }}</div>
+    <div class="help-list toggle-note">
+        <label for="{{ form.note.auto_id }}">Note:</label>{{ form.note }}
+    </div>
+
+    <div class="fieldWrapper">
+        <label for="{{ form.customer_travel_required.auto_id }}">Customer Should Travel to My Place of Business:</label> {{ form.customer_travel_required }}
+    </div>
+
+    <br><br>
+    <div class="form-label">
+        &gt;&gt;&gt; <input type="submit"  value="Submit Quote" alt="Continue" id="button_continue"/> to next step...
+    </div>
+
+</form>
+
+<div><a href="/reject_request/">No Thanks, I'm not interested</a></div>
+
+{% endblock %}

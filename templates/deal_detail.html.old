@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block extralinks %}
+        <link type="text/css" rel="stylesheet" href="/media/js/css/ui-lightness/jquery-ui-1.7.2.custom.css" />
+
+<style type="text/css">
+
+.toggleLink {
+  font-size: 80%;
+}
+
+.form-label {
+  margin-top:20px;
+  margin-bottom: 5px;
+}
+
+.hint {
+  font-size: 80%;
+  display: none;
+  color: #f00;
+}
+
+
+</style>
+
+
+{% endblock %}
+
+{% block extrascripts %}
+jquery.countdown.js
+{% endblock %}
+
+{% block extrajs %}
+
+
+    $().ready(function(){
+
+
+
+      // choose text for the show/hide link - can contain HTML (e.g. an image)
+      var showText='[ help ]';
+      var hideText='[ hide ]';
+
+      // append show/hide links to the element directly preceding the element with a class of "toggle"
+      $('.toggle').prev().append(' <a href="#" class="toggleLink">'+showText+'</a>');
+
+      // hide all of the elements with a class of 'toggle'
+      $('.toggle').hide();
+
+      // capture clicks on the toggle links
+      $('a.toggleLink').click(function() {
+    
+        // change the link depending on whether the element is shown or hidden
+        $(this).html ($(this).html()==hideText ? showText : hideText);
+
+        // toggle the display - uncomment the next line for a basic "accordion" style
+        //$('.toggle').hide();$('a.toggleLink').html(showText);
+        $(this).parent().next('.toggle').toggle('slow');
+
+        // return false so any link destination is not followed
+        return false;
+
+      });
+
+  });
+
+
+{% endblock %}
+
+{% block content %}
+
+<div class="main-body" style="">
+<br><br>
+  <h3 style="font-size: 190%; font-weight: bold;">{{ deal.title }}</h3>
+<br>
+
+<script language="JavaScript">
+TargetDate = "{{ countdown_time }}";
+BackColor = "#d7164d";
+ForeColor = "white";
+CountActive = true;
+CountStepper = -1;
+LeadingZero = true;
+DisplayFormat = "%%H%% Hours<br>%%M%% Minutes<br>%%S%% Seconds.";
+FinishMessage = "It is finally here!";
+</script>
+  <script type="text/javascript" src="/media/js/countdown.js"></script>
+<br><br>
+  {{ deal.category }}
+
+  {{ deal.date_published }}
+  {{ deal.retail_price }}
+  {{ deal.deal_price }}
+
+  {{ deal.discount_percentage }}
+  {{ deal.discount_value }}
+
+  {{ deal.auction_duration }}
+
+  {{ deal.is_deal_on }}
+
+  {{ deal.fine_print }}
+  {{ deal.highlights }}
+  {{ deal.tipping_point }}
+
+  {{ deal.description }}
+  {{ deal.company_desc }}
+
+  {{ deal.image }}
+
+  {{ deal.tags }}
+
+  {{ deal.latitude }}
+  {{ deal.longitude }}
+
+
+</div>
+
+
+
+{% endblock %}

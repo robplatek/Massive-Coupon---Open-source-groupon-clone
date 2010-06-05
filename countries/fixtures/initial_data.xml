@@ -1,0 +1,1728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="AF" model="countries.country">
+        <field type="CharField" name="name">AFGHANISTAN</field>
+        <field type="CharField" name="printable_name">Afghanistan</field>
+        <field type="CharField" name="iso3">AFG</field>
+        <field type="PositiveSmallIntegerField" name="numcode">4</field>
+    </object>
+    <object pk="AX" model="countries.country">
+        <field type="CharField" name="name">ALAND ISLANDS</field>
+        <field type="CharField" name="printable_name">Åland Islands</field>
+        <field type="CharField" name="iso3">ALA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">248</field>
+    </object>
+    <object pk="AL" model="countries.country">
+        <field type="CharField" name="name">ALBANIA</field>
+        <field type="CharField" name="printable_name">Albania</field>
+        <field type="CharField" name="iso3">ALB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">8</field>
+    </object>
+    <object pk="DZ" model="countries.country">
+        <field type="CharField" name="name">ALGERIA</field>
+        <field type="CharField" name="printable_name">Algeria</field>
+        <field type="CharField" name="iso3">DZA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">12</field>
+    </object>
+    <object pk="AS" model="countries.country">
+        <field type="CharField" name="name">AMERICAN SAMOA</field>
+        <field type="CharField" name="printable_name">American Samoa</field>
+        <field type="CharField" name="iso3">ASM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">16</field>
+    </object>
+    <object pk="AD" model="countries.country">
+        <field type="CharField" name="name">ANDORRA</field>
+        <field type="CharField" name="printable_name">Andorra</field>
+        <field type="CharField" name="iso3">AND</field>
+        <field type="PositiveSmallIntegerField" name="numcode">20</field>
+    </object>
+    <object pk="AO" model="countries.country">
+        <field type="CharField" name="name">ANGOLA</field>
+        <field type="CharField" name="printable_name">Angola</field>
+        <field type="CharField" name="iso3">AGO</field>
+        <field type="PositiveSmallIntegerField" name="numcode">24</field>
+    </object>
+    <object pk="AI" model="countries.country">
+        <field type="CharField" name="name">ANGUILLA</field>
+        <field type="CharField" name="printable_name">Anguilla</field>
+        <field type="CharField" name="iso3">AIA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">660</field>
+    </object>
+    <object pk="AQ" model="countries.country">
+        <field type="CharField" name="name">ANTARCTICA</field>
+        <field type="CharField" name="printable_name">Antarctica</field>
+        <field type="CharField" name="iso3">ATA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">10</field>
+    </object>
+    <object pk="AG" model="countries.country">
+        <field type="CharField" name="name">ANTIGUA AND BARBUDA</field>
+        <field type="CharField" name="printable_name">Antigua and Barbuda</field>
+        <field type="CharField" name="iso3">ATG</field>
+        <field type="PositiveSmallIntegerField" name="numcode">28</field>
+    </object>
+    <object pk="AR" model="countries.country">
+        <field type="CharField" name="name">ARGENTINA</field>
+        <field type="CharField" name="printable_name">Argentina</field>
+        <field type="CharField" name="iso3">ARG</field>
+        <field type="PositiveSmallIntegerField" name="numcode">32</field>
+    </object>
+    <object pk="AM" model="countries.country">
+        <field type="CharField" name="name">ARMENIA</field>
+        <field type="CharField" name="printable_name">Armenia</field>
+        <field type="CharField" name="iso3">ARM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">51</field>
+    </object>
+    <object pk="AW" model="countries.country">
+        <field type="CharField" name="name">ARUBA</field>
+        <field type="CharField" name="printable_name">Aruba</field>
+        <field type="CharField" name="iso3">ABW</field>
+        <field type="PositiveSmallIntegerField" name="numcode">533</field>
+    </object>
+    <object pk="AU" model="countries.country">
+        <field type="CharField" name="name">AUSTRALIA</field>
+        <field type="CharField" name="printable_name">Australia</field>
+        <field type="CharField" name="iso3">AUS</field>
+        <field type="PositiveSmallIntegerField" name="numcode">36</field>
+    </object>
+    <object pk="AT" model="countries.country">
+        <field type="CharField" name="name">AUSTRIA</field>
+        <field type="CharField" name="printable_name">Austria</field>
+        <field type="CharField" name="iso3">AUT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">40</field>
+    </object>
+    <object pk="AZ" model="countries.country">
+        <field type="CharField" name="name">AZERBAIJAN</field>
+        <field type="CharField" name="printable_name">Azerbaijan</field>
+        <field type="CharField" name="iso3">AZE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">31</field>
+    </object>
+    <object pk="BS" model="countries.country">
+        <field type="CharField" name="name">BAHAMAS</field>
+        <field type="CharField" name="printable_name">Bahamas</field>
+        <field type="CharField" name="iso3">BHS</field>
+        <field type="PositiveSmallIntegerField" name="numcode">44</field>
+    </object>
+    <object pk="BH" model="countries.country">
+        <field type="CharField" name="name">BAHRAIN</field>
+        <field type="CharField" name="printable_name">Bahrain</field>
+        <field type="CharField" name="iso3">BHR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">48</field>
+    </object>
+    <object pk="BD" model="countries.country">
+        <field type="CharField" name="name">BANGLADESH</field>
+        <field type="CharField" name="printable_name">Bangladesh</field>
+        <field type="CharField" name="iso3">BGD</field>
+        <field type="PositiveSmallIntegerField" name="numcode">50</field>
+    </object>
+    <object pk="BB" model="countries.country">
+        <field type="CharField" name="name">BARBADOS</field>
+        <field type="CharField" name="printable_name">Barbados</field>
+        <field type="CharField" name="iso3">BRB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">52</field>
+    </object>
+    <object pk="BY" model="countries.country">
+        <field type="CharField" name="name">BELARUS</field>
+        <field type="CharField" name="printable_name">Belarus</field>
+        <field type="CharField" name="iso3">BLR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">112</field>
+    </object>
+    <object pk="BE" model="countries.country">
+        <field type="CharField" name="name">BELGIUM</field>
+        <field type="CharField" name="printable_name">Belgium</field>
+        <field type="CharField" name="iso3">BEL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">56</field>
+    </object>
+    <object pk="BZ" model="countries.country">
+        <field type="CharField" name="name">BELIZE</field>
+        <field type="CharField" name="printable_name">Belize</field>
+        <field type="CharField" name="iso3">BLZ</field>
+        <field type="PositiveSmallIntegerField" name="numcode">84</field>
+    </object>
+    <object pk="BJ" model="countries.country">
+        <field type="CharField" name="name">BENIN</field>
+        <field type="CharField" name="printable_name">Benin</field>
+        <field type="CharField" name="iso3">BEN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">204</field>
+    </object>
+    <object pk="BM" model="countries.country">
+        <field type="CharField" name="name">BERMUDA</field>
+        <field type="CharField" name="printable_name">Bermuda</field>
+        <field type="CharField" name="iso3">BMU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">60</field>
+    </object>
+    <object pk="BT" model="countries.country">
+        <field type="CharField" name="name">BHUTAN</field>
+        <field type="CharField" name="printable_name">Bhutan</field>
+        <field type="CharField" name="iso3">BTN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">64</field>
+    </object>
+    <object pk="BO" model="countries.country">
+        <field type="CharField" name="name">BOLIVIA</field>
+        <field type="CharField" name="printable_name">Bolivia</field>
+        <field type="CharField" name="iso3">BOL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">68</field>
+    </object>
+    <object pk="BA" model="countries.country">
+        <field type="CharField" name="name">BOSNIA AND HERZEGOVINA</field>
+        <field type="CharField" name="printable_name">Bosnia and Herzegovina</field>
+        <field type="CharField" name="iso3">BIH</field>
+        <field type="PositiveSmallIntegerField" name="numcode">70</field>
+    </object>
+    <object pk="BW" model="countries.country">
+        <field type="CharField" name="name">BOTSWANA</field>
+        <field type="CharField" name="printable_name">Botswana</field>
+        <field type="CharField" name="iso3">BWA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">72</field>
+    </object>
+    <object pk="BV" model="countries.country">
+        <field type="CharField" name="name">BOUVET ISLAND</field>
+        <field type="CharField" name="printable_name">Bouvet Island</field>
+        <field type="CharField" name="iso3">BVT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">74</field>
+    </object>
+    <object pk="BR" model="countries.country">
+        <field type="CharField" name="name">BRAZIL</field>
+        <field type="CharField" name="printable_name">Brazil</field>
+        <field type="CharField" name="iso3">BRA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">76</field>
+    </object>
+    <object pk="IO" model="countries.country">
+        <field type="CharField" name="name">BRITISH INDIAN OCEAN TERRITORY</field>
+        <field type="CharField" name="printable_name">British Indian Ocean Territory</field>
+        <field type="CharField" name="iso3">IOT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">86</field>
+    </object>
+    <object pk="BN" model="countries.country">
+        <field type="CharField" name="name">BRUNEI DARUSSALAM</field>
+        <field type="CharField" name="printable_name">Brunei Darussalam</field>
+        <field type="CharField" name="iso3">BRN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">96</field>
+    </object>
+    <object pk="BG" model="countries.country">
+        <field type="CharField" name="name">BULGARIA</field>
+        <field type="CharField" name="printable_name">Bulgaria</field>
+        <field type="CharField" name="iso3">BGR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">100</field>
+    </object>
+    <object pk="BF" model="countries.country">
+        <field type="CharField" name="name">BURKINA FASO</field>
+        <field type="CharField" name="printable_name">Burkina Faso</field>
+        <field type="CharField" name="iso3">BFA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">854</field>
+    </object>
+    <object pk="BI" model="countries.country">
+        <field type="CharField" name="name">BURUNDI</field>
+        <field type="CharField" name="printable_name">Burundi</field>
+        <field type="CharField" name="iso3">BDI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">108</field>
+    </object>
+    <object pk="KH" model="countries.country">
+        <field type="CharField" name="name">CAMBODIA</field>
+        <field type="CharField" name="printable_name">Cambodia</field>
+        <field type="CharField" name="iso3">KHM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">116</field>
+    </object>
+    <object pk="CM" model="countries.country">
+        <field type="CharField" name="name">CAMEROON</field>
+        <field type="CharField" name="printable_name">Cameroon</field>
+        <field type="CharField" name="iso3">CMR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">120</field>
+    </object>
+    <object pk="CA" model="countries.country">
+        <field type="CharField" name="name">CANADA</field>
+        <field type="CharField" name="printable_name">Canada</field>
+        <field type="CharField" name="iso3">CAN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">124</field>
+    </object>
+    <object pk="CV" model="countries.country">
+        <field type="CharField" name="name">CAPE VERDE</field>
+        <field type="CharField" name="printable_name">Cape Verde</field>
+        <field type="CharField" name="iso3">CPV</field>
+        <field type="PositiveSmallIntegerField" name="numcode">132</field>
+    </object>
+    <object pk="KY" model="countries.country">
+        <field type="CharField" name="name">CAYMAN ISLANDS</field>
+        <field type="CharField" name="printable_name">Cayman Islands</field>
+        <field type="CharField" name="iso3">CYM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">136</field>
+    </object>
+    <object pk="CF" model="countries.country">
+        <field type="CharField" name="name">CENTRAL AFRICAN REPUBLIC</field>
+        <field type="CharField" name="printable_name">Central African Republic</field>
+        <field type="CharField" name="iso3">CAF</field>
+        <field type="PositiveSmallIntegerField" name="numcode">140</field>
+    </object>
+    <object pk="TD" model="countries.country">
+        <field type="CharField" name="name">CHAD</field>
+        <field type="CharField" name="printable_name">Chad</field>
+        <field type="CharField" name="iso3">TCD</field>
+        <field type="PositiveSmallIntegerField" name="numcode">148</field>
+    </object>
+    <object pk="CL" model="countries.country">
+        <field type="CharField" name="name">CHILE</field>
+        <field type="CharField" name="printable_name">Chile</field>
+        <field type="CharField" name="iso3">CHL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">152</field>
+    </object>
+    <object pk="CN" model="countries.country">
+        <field type="CharField" name="name">CHINA</field>
+        <field type="CharField" name="printable_name">China</field>
+        <field type="CharField" name="iso3">CHN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">156</field>
+    </object>
+    <object pk="CX" model="countries.country">
+        <field type="CharField" name="name">CHRISTMAS ISLAND</field>
+        <field type="CharField" name="printable_name">Christmas Island</field>
+        <field type="CharField" name="iso3">CXR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">162</field>
+    </object>
+    <object pk="CC" model="countries.country">
+        <field type="CharField" name="name">COCOS (KEELING) ISLANDS</field>
+        <field type="CharField" name="printable_name">Cocos (Keeling) Islands</field>
+        <field type="CharField" name="iso3">CCK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">166</field>
+    </object>
+    <object pk="CO" model="countries.country">
+        <field type="CharField" name="name">COLOMBIA</field>
+        <field type="CharField" name="printable_name">Colombia</field>
+        <field type="CharField" name="iso3">COL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">170</field>
+    </object>
+    <object pk="KM" model="countries.country">
+        <field type="CharField" name="name">COMOROS</field>
+        <field type="CharField" name="printable_name">Comoros</field>
+        <field type="CharField" name="iso3">COM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">174</field>
+    </object>
+    <object pk="CG" model="countries.country">
+        <field type="CharField" name="name">CONGO</field>
+        <field type="CharField" name="printable_name">Congo</field>
+        <field type="CharField" name="iso3">COG</field>
+        <field type="PositiveSmallIntegerField" name="numcode">178</field>
+    </object>
+    <object pk="CD" model="countries.country">
+        <field type="CharField" name="name">CONGO, THE DEMOCRATIC REPUBLIC OF THE</field>
+        <field type="CharField" name="printable_name">Democratic Republic of the Congo</field>
+        <field type="CharField" name="iso3">COD</field>
+        <field type="PositiveSmallIntegerField" name="numcode">180</field>
+    </object>
+    <object pk="CK" model="countries.country">
+        <field type="CharField" name="name">COOK ISLANDS</field>
+        <field type="CharField" name="printable_name">Cook Islands</field>
+        <field type="CharField" name="iso3">COK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">184</field>
+    </object>
+    <object pk="CR" model="countries.country">
+        <field type="CharField" name="name">COSTA RICA</field>
+        <field type="CharField" name="printable_name">Costa Rica</field>
+        <field type="CharField" name="iso3">CRI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">188</field>
+    </object>
+    <object pk="CI" model="countries.country">
+        <field type="CharField" name="name">COTE D'IVOIRE</field>
+        <field type="CharField" name="printable_name">Côte d'Ivoire</field>
+        <field type="CharField" name="iso3">CIV</field>
+        <field type="PositiveSmallIntegerField" name="numcode">384</field>
+    </object>
+    <object pk="HR" model="countries.country">
+        <field type="CharField" name="name">CROATIA</field>
+        <field type="CharField" name="printable_name">Croatia</field>
+        <field type="CharField" name="iso3">HRV</field>
+        <field type="PositiveSmallIntegerField" name="numcode">191</field>
+    </object>
+    <object pk="CU" model="countries.country">
+        <field type="CharField" name="name">CUBA</field>
+        <field type="CharField" name="printable_name">Cuba</field>
+        <field type="CharField" name="iso3">CUB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">192</field>
+    </object>
+    <object pk="CY" model="countries.country">
+        <field type="CharField" name="name">CYPRUS</field>
+        <field type="CharField" name="printable_name">Cyprus</field>
+        <field type="CharField" name="iso3">CYP</field>
+        <field type="PositiveSmallIntegerField" name="numcode">196</field>
+    </object>
+    <object pk="CZ" model="countries.country">
+        <field type="CharField" name="name">CZECH REPUBLIC</field>
+        <field type="CharField" name="printable_name">Czech Republic</field>
+        <field type="CharField" name="iso3">CZE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">203</field>
+    </object>
+    <object pk="DK" model="countries.country">
+        <field type="CharField" name="name">DENMARK</field>
+        <field type="CharField" name="printable_name">Denmark</field>
+        <field type="CharField" name="iso3">DNK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">208</field>
+    </object>
+    <object pk="DJ" model="countries.country">
+        <field type="CharField" name="name">DJIBOUTI</field>
+        <field type="CharField" name="printable_name">Djibouti</field>
+        <field type="CharField" name="iso3">DJI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">262</field>
+    </object>
+    <object pk="DM" model="countries.country">
+        <field type="CharField" name="name">DOMINICA</field>
+        <field type="CharField" name="printable_name">Dominica</field>
+        <field type="CharField" name="iso3">DMA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">212</field>
+    </object>
+    <object pk="DO" model="countries.country">
+        <field type="CharField" name="name">DOMINICAN REPUBLIC</field>
+        <field type="CharField" name="printable_name">Dominican Republic</field>
+        <field type="CharField" name="iso3">DOM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">214</field>
+    </object>
+    <object pk="EC" model="countries.country">
+        <field type="CharField" name="name">ECUADOR</field>
+        <field type="CharField" name="printable_name">Ecuador</field>
+        <field type="CharField" name="iso3">ECU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">218</field>
+    </object>
+    <object pk="EG" model="countries.country">
+        <field type="CharField" name="name">EGYPT</field>
+        <field type="CharField" name="printable_name">Egypt</field>
+        <field type="CharField" name="iso3">EGY</field>
+        <field type="PositiveSmallIntegerField" name="numcode">818</field>
+    </object>
+    <object pk="SV" model="countries.country">
+        <field type="CharField" name="name">EL SALVADOR</field>
+        <field type="CharField" name="printable_name">El Salvador</field>
+        <field type="CharField" name="iso3">SLV</field>
+        <field type="PositiveSmallIntegerField" name="numcode">222</field>
+    </object>
+    <object pk="GQ" model="countries.country">
+        <field type="CharField" name="name">EQUATORIAL GUINEA</field>
+        <field type="CharField" name="printable_name">Equatorial Guinea</field>
+        <field type="CharField" name="iso3">GNQ</field>
+        <field type="PositiveSmallIntegerField" name="numcode">226</field>
+    </object>
+    <object pk="ER" model="countries.country">
+        <field type="CharField" name="name">ERITREA</field>
+        <field type="CharField" name="printable_name">Eritrea</field>
+        <field type="CharField" name="iso3">ERI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">232</field>
+    </object>
+    <object pk="EE" model="countries.country">
+        <field type="CharField" name="name">ESTONIA</field>
+        <field type="CharField" name="printable_name">Estonia</field>
+        <field type="CharField" name="iso3">EST</field>
+        <field type="PositiveSmallIntegerField" name="numcode">233</field>
+    </object>
+    <object pk="ET" model="countries.country">
+        <field type="CharField" name="name">ETHIOPIA</field>
+        <field type="CharField" name="printable_name">Ethiopia</field>
+        <field type="CharField" name="iso3">ETH</field>
+        <field type="PositiveSmallIntegerField" name="numcode">231</field>
+    </object>
+    <object pk="FK" model="countries.country">
+        <field type="CharField" name="name">FALKLAND ISLANDS (MALVINAS)</field>
+        <field type="CharField" name="printable_name">Falkland Islands (Malvinas)</field>
+        <field type="CharField" name="iso3">FLK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">238</field>
+    </object>
+    <object pk="FO" model="countries.country">
+        <field type="CharField" name="name">FAROE ISLANDS</field>
+        <field type="CharField" name="printable_name">Faeroe Islands</field>
+        <field type="CharField" name="iso3">FRO</field>
+        <field type="PositiveSmallIntegerField" name="numcode">234</field>
+    </object>
+    <object pk="FJ" model="countries.country">
+        <field type="CharField" name="name">FIJI</field>
+        <field type="CharField" name="printable_name">Fiji</field>
+        <field type="CharField" name="iso3">FJI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">242</field>
+    </object>
+    <object pk="FI" model="countries.country">
+        <field type="CharField" name="name">FINLAND</field>
+        <field type="CharField" name="printable_name">Finland</field>
+        <field type="CharField" name="iso3">FIN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">246</field>
+    </object>
+    <object pk="FR" model="countries.country">
+        <field type="CharField" name="name">FRANCE</field>
+        <field type="CharField" name="printable_name">France</field>
+        <field type="CharField" name="iso3">FRA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">250</field>
+    </object>
+    <object pk="GF" model="countries.country">
+        <field type="CharField" name="name">FRENCH GUIANA</field>
+        <field type="CharField" name="printable_name">French Guiana</field>
+        <field type="CharField" name="iso3">GUF</field>
+        <field type="PositiveSmallIntegerField" name="numcode">254</field>
+    </object>
+    <object pk="PF" model="countries.country">
+        <field type="CharField" name="name">FRENCH POLYNESIA</field>
+        <field type="CharField" name="printable_name">French Polynesia</field>
+        <field type="CharField" name="iso3">PYF</field>
+        <field type="PositiveSmallIntegerField" name="numcode">258</field>
+    </object>
+    <object pk="TF" model="countries.country">
+        <field type="CharField" name="name">FRENCH SOUTHERN TERRITORIES</field>
+        <field type="CharField" name="printable_name">French Southern Territories</field>
+        <field type="CharField" name="iso3">ATF</field>
+        <field type="PositiveSmallIntegerField" name="numcode">260</field>
+    </object>
+    <object pk="GA" model="countries.country">
+        <field type="CharField" name="name">GABON</field>
+        <field type="CharField" name="printable_name">Gabon</field>
+        <field type="CharField" name="iso3">GAB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">266</field>
+    </object>
+    <object pk="GM" model="countries.country">
+        <field type="CharField" name="name">GAMBIA</field>
+        <field type="CharField" name="printable_name">Gambia</field>
+        <field type="CharField" name="iso3">GMB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">270</field>
+    </object>
+    <object pk="GE" model="countries.country">
+        <field type="CharField" name="name">GEORGIA</field>
+        <field type="CharField" name="printable_name">Georgia</field>
+        <field type="CharField" name="iso3">GEO</field>
+        <field type="PositiveSmallIntegerField" name="numcode">268</field>
+    </object>
+    <object pk="DE" model="countries.country">
+        <field type="CharField" name="name">GERMANY</field>
+        <field type="CharField" name="printable_name">Germany</field>
+        <field type="CharField" name="iso3">DEU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">276</field>
+    </object>
+    <object pk="GH" model="countries.country">
+        <field type="CharField" name="name">GHANA</field>
+        <field type="CharField" name="printable_name">Ghana</field>
+        <field type="CharField" name="iso3">GHA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">288</field>
+    </object>
+    <object pk="GI" model="countries.country">
+        <field type="CharField" name="name">GIBRALTAR</field>
+        <field type="CharField" name="printable_name">Gibraltar</field>
+        <field type="CharField" name="iso3">GIB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">292</field>
+    </object>
+    <object pk="GR" model="countries.country">
+        <field type="CharField" name="name">GREECE</field>
+        <field type="CharField" name="printable_name">Greece</field>
+        <field type="CharField" name="iso3">GRC</field>
+        <field type="PositiveSmallIntegerField" name="numcode">300</field>
+    </object>
+    <object pk="GL" model="countries.country">
+        <field type="CharField" name="name">GREENLAND</field>
+        <field type="CharField" name="printable_name">Greenland</field>
+        <field type="CharField" name="iso3">GRL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">304</field>
+    </object>
+    <object pk="GD" model="countries.country">
+        <field type="CharField" name="name">GRENADA</field>
+        <field type="CharField" name="printable_name">Grenada</field>
+        <field type="CharField" name="iso3">GRD</field>
+        <field type="PositiveSmallIntegerField" name="numcode">308</field>
+    </object>
+    <object pk="GP" model="countries.country">
+        <field type="CharField" name="name">GUADELOUPE</field>
+        <field type="CharField" name="printable_name">Guadeloupe</field>
+        <field type="CharField" name="iso3">GLP</field>
+        <field type="PositiveSmallIntegerField" name="numcode">312</field>
+    </object>
+    <object pk="GU" model="countries.country">
+        <field type="CharField" name="name">GUAM</field>
+        <field type="CharField" name="printable_name">Guam</field>
+        <field type="CharField" name="iso3">GUM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">316</field>
+    </object>
+    <object pk="GT" model="countries.country">
+        <field type="CharField" name="name">GUATEMALA</field>
+        <field type="CharField" name="printable_name">Guatemala</field>
+        <field type="CharField" name="iso3">GTM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">320</field>
+    </object>
+    <object pk="GG" model="countries.country">
+        <field type="CharField" name="name">GUERNSEY</field>
+        <field type="CharField" name="printable_name">Guernsey</field>
+        <field type="CharField" name="iso3">GGY</field>
+        <field type="PositiveSmallIntegerField" name="numcode">831</field>
+    </object>
+    <object pk="GN" model="countries.country">
+        <field type="CharField" name="name">GUINEA</field>
+        <field type="CharField" name="printable_name">Guinea</field>
+        <field type="CharField" name="iso3">GIN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">324</field>
+    </object>
+    <object pk="GW" model="countries.country">
+        <field type="CharField" name="name">GUINEA-BISSAU</field>
+        <field type="CharField" name="printable_name">Guinea-Bissau</field>
+        <field type="CharField" name="iso3">GNB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">624</field>
+    </object>
+    <object pk="GY" model="countries.country">
+        <field type="CharField" name="name">GUYANA</field>
+        <field type="CharField" name="printable_name">Guyana</field>
+        <field type="CharField" name="iso3">GUY</field>
+        <field type="PositiveSmallIntegerField" name="numcode">328</field>
+    </object>
+    <object pk="HT" model="countries.country">
+        <field type="CharField" name="name">HAITI</field>
+        <field type="CharField" name="printable_name">Haiti</field>
+        <field type="CharField" name="iso3">HTI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">332</field>
+    </object>
+    <object pk="HM" model="countries.country">
+        <field type="CharField" name="name">HEARD ISLAND AND MCDONALD ISLANDS</field>
+        <field type="CharField" name="printable_name">Heard Island and Mcdonald Islands</field>
+        <field type="CharField" name="iso3">HMD</field>
+        <field type="PositiveSmallIntegerField" name="numcode">334</field>
+    </object>
+    <object pk="VA" model="countries.country">
+        <field type="CharField" name="name">HOLY SEE (VATICAN CITY STATE)</field>
+        <field type="CharField" name="printable_name">Holy See</field>
+        <field type="CharField" name="iso3">VAT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">336</field>
+    </object>
+    <object pk="HN" model="countries.country">
+        <field type="CharField" name="name">HONDURAS</field>
+        <field type="CharField" name="printable_name">Honduras</field>
+        <field type="CharField" name="iso3">HND</field>
+        <field type="PositiveSmallIntegerField" name="numcode">340</field>
+    </object>
+    <object pk="HK" model="countries.country">
+        <field type="CharField" name="name">HONG KONG</field>
+        <field type="CharField" name="printable_name">Hong Kong Special Administrative Region of China</field>
+        <field type="CharField" name="iso3">HKG</field>
+        <field type="PositiveSmallIntegerField" name="numcode">344</field>
+    </object>
+    <object pk="HU" model="countries.country">
+        <field type="CharField" name="name">HUNGARY</field>
+        <field type="CharField" name="printable_name">Hungary</field>
+        <field type="CharField" name="iso3">HUN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">348</field>
+    </object>
+    <object pk="IS" model="countries.country">
+        <field type="CharField" name="name">ICELAND</field>
+        <field type="CharField" name="printable_name">Iceland</field>
+        <field type="CharField" name="iso3">ISL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">352</field>
+    </object>
+    <object pk="IN" model="countries.country">
+        <field type="CharField" name="name">INDIA</field>
+        <field type="CharField" name="printable_name">India</field>
+        <field type="CharField" name="iso3">IND</field>
+        <field type="PositiveSmallIntegerField" name="numcode">356</field>
+    </object>
+    <object pk="ID" model="countries.country">
+        <field type="CharField" name="name">INDONESIA</field>
+        <field type="CharField" name="printable_name">Indonesia</field>
+        <field type="CharField" name="iso3">IDN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">360</field>
+    </object>
+    <object pk="IR" model="countries.country">
+        <field type="CharField" name="name">IRAN, ISLAMIC REPUBLIC OF</field>
+        <field type="CharField" name="printable_name">Iran, Islamic Republic of</field>
+        <field type="CharField" name="iso3">IRN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">364</field>
+    </object>
+    <object pk="IQ" model="countries.country">
+        <field type="CharField" name="name">IRAQ</field>
+        <field type="CharField" name="printable_name">Iraq</field>
+        <field type="CharField" name="iso3">IRQ</field>
+        <field type="PositiveSmallIntegerField" name="numcode">368</field>
+    </object>
+    <object pk="IE" model="countries.country">
+        <field type="CharField" name="name">IRELAND</field>
+        <field type="CharField" name="printable_name">Ireland</field>
+        <field type="CharField" name="iso3">IRL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">372</field>
+    </object>
+    <object pk="IM" model="countries.country">
+        <field type="CharField" name="name">ISLE OF MAN</field>
+        <field type="CharField" name="printable_name">Isle of Man</field>
+        <field type="CharField" name="iso3">IMN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">833</field>
+    </object>
+    <object pk="IL" model="countries.country">
+        <field type="CharField" name="name">ISRAEL</field>
+        <field type="CharField" name="printable_name">Israel</field>
+        <field type="CharField" name="iso3">ISR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">376</field>
+    </object>
+    <object pk="IT" model="countries.country">
+        <field type="CharField" name="name">ITALY</field>
+        <field type="CharField" name="printable_name">Italy</field>
+        <field type="CharField" name="iso3">ITA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">380</field>
+    </object>
+    <object pk="JM" model="countries.country">
+        <field type="CharField" name="name">JAMAICA</field>
+        <field type="CharField" name="printable_name">Jamaica</field>
+        <field type="CharField" name="iso3">JAM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">388</field>
+    </object>
+    <object pk="JP" model="countries.country">
+        <field type="CharField" name="name">JAPAN</field>
+        <field type="CharField" name="printable_name">Japan</field>
+        <field type="CharField" name="iso3">JPN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">392</field>
+    </object>
+    <object pk="JE" model="countries.country">
+        <field type="CharField" name="name">JERSEY</field>
+        <field type="CharField" name="printable_name">Jersey</field>
+        <field type="CharField" name="iso3">JEY</field>
+        <field type="PositiveSmallIntegerField" name="numcode">832</field>
+    </object>
+    <object pk="JO" model="countries.country">
+        <field type="CharField" name="name">JORDAN</field>
+        <field type="CharField" name="printable_name">Jordan</field>
+        <field type="CharField" name="iso3">JOR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">400</field>
+    </object>
+    <object pk="KZ" model="countries.country">
+        <field type="CharField" name="name">KAZAKHSTAN</field>
+        <field type="CharField" name="printable_name">Kazakhstan</field>
+        <field type="CharField" name="iso3">KAZ</field>
+        <field type="PositiveSmallIntegerField" name="numcode">398</field>
+    </object>
+    <object pk="KE" model="countries.country">
+        <field type="CharField" name="name">KENYA</field>
+        <field type="CharField" name="printable_name">Kenya</field>
+        <field type="CharField" name="iso3">KEN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">404</field>
+    </object>
+    <object pk="KI" model="countries.country">
+        <field type="CharField" name="name">KIRIBATI</field>
+        <field type="CharField" name="printable_name">Kiribati</field>
+        <field type="CharField" name="iso3">KIR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">296</field>
+    </object>
+    <object pk="KP" model="countries.country">
+        <field type="CharField" name="name">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</field>
+        <field type="CharField" name="printable_name">Democratic People's Republic of Korea</field>
+        <field type="CharField" name="iso3">PRK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">408</field>
+    </object>
+    <object pk="KR" model="countries.country">
+        <field type="CharField" name="name">KOREA, REPUBLIC OF</field>
+        <field type="CharField" name="printable_name">Republic of Korea</field>
+        <field type="CharField" name="iso3">KOR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">410</field>
+    </object>
+    <object pk="KW" model="countries.country">
+        <field type="CharField" name="name">KUWAIT</field>
+        <field type="CharField" name="printable_name">Kuwait</field>
+        <field type="CharField" name="iso3">KWT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">414</field>
+    </object>
+    <object pk="KG" model="countries.country">
+        <field type="CharField" name="name">KYRGYZSTAN</field>
+        <field type="CharField" name="printable_name">Kyrgyzstan</field>
+        <field type="CharField" name="iso3">KGZ</field>
+        <field type="PositiveSmallIntegerField" name="numcode">417</field>
+    </object>
+    <object pk="LA" model="countries.country">
+        <field type="CharField" name="name">LAO PEOPLE'S DEMOCRATIC REPUBLIC</field>
+        <field type="CharField" name="printable_name">Lao People's Democratic Republic</field>
+        <field type="CharField" name="iso3">LAO</field>
+        <field type="PositiveSmallIntegerField" name="numcode">418</field>
+    </object>
+    <object pk="LV" model="countries.country">
+        <field type="CharField" name="name">LATVIA</field>
+        <field type="CharField" name="printable_name">Latvia</field>
+        <field type="CharField" name="iso3">LVA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">428</field>
+    </object>
+    <object pk="LB" model="countries.country">
+        <field type="CharField" name="name">LEBANON</field>
+        <field type="CharField" name="printable_name">Lebanon</field>
+        <field type="CharField" name="iso3">LBN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">422</field>
+    </object>
+    <object pk="LS" model="countries.country">
+        <field type="CharField" name="name">LESOTHO</field>
+        <field type="CharField" name="printable_name">Lesotho</field>
+        <field type="CharField" name="iso3">LSO</field>
+        <field type="PositiveSmallIntegerField" name="numcode">426</field>
+    </object>
+    <object pk="LR" model="countries.country">
+        <field type="CharField" name="name">LIBERIA</field>
+        <field type="CharField" name="printable_name">Liberia</field>
+        <field type="CharField" name="iso3">LBR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">430</field>
+    </object>
+    <object pk="LY" model="countries.country">
+        <field type="CharField" name="name">LIBYAN ARAB JAMAHIRIYA</field>
+        <field type="CharField" name="printable_name">Libyan Arab Jamahiriya</field>
+        <field type="CharField" name="iso3">LBY</field>
+        <field type="PositiveSmallIntegerField" name="numcode">434</field>
+    </object>
+    <object pk="LI" model="countries.country">
+        <field type="CharField" name="name">LIECHTENSTEIN</field>
+        <field type="CharField" name="printable_name">Liechtenstein</field>
+        <field type="CharField" name="iso3">LIE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">438</field>
+    </object>
+    <object pk="LT" model="countries.country">
+        <field type="CharField" name="name">LITHUANIA</field>
+        <field type="CharField" name="printable_name">Lithuania</field>
+        <field type="CharField" name="iso3">LTU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">440</field>
+    </object>
+    <object pk="LU" model="countries.country">
+        <field type="CharField" name="name">LUXEMBOURG</field>
+        <field type="CharField" name="printable_name">Luxembourg</field>
+        <field type="CharField" name="iso3">LUX</field>
+        <field type="PositiveSmallIntegerField" name="numcode">442</field>
+    </object>
+    <object pk="MO" model="countries.country">
+        <field type="CharField" name="name">MACAO</field>
+        <field type="CharField" name="printable_name">Macao Special Administrative Region of China</field>
+        <field type="CharField" name="iso3">MAC</field>
+        <field type="PositiveSmallIntegerField" name="numcode">446</field>
+    </object>
+    <object pk="MK" model="countries.country">
+        <field type="CharField" name="name">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</field>
+        <field type="CharField" name="printable_name">The former Yugoslav Republic of Macedonia</field>
+        <field type="CharField" name="iso3">MKD</field>
+        <field type="PositiveSmallIntegerField" name="numcode">807</field>
+    </object>
+    <object pk="MG" model="countries.country">
+        <field type="CharField" name="name">MADAGASCAR</field>
+        <field type="CharField" name="printable_name">Madagascar</field>
+        <field type="CharField" name="iso3">MDG</field>
+        <field type="PositiveSmallIntegerField" name="numcode">450</field>
+    </object>
+    <object pk="MW" model="countries.country">
+        <field type="CharField" name="name">MALAWI</field>
+        <field type="CharField" name="printable_name">Malawi</field>
+        <field type="CharField" name="iso3">MWI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">454</field>
+    </object>
+    <object pk="MY" model="countries.country">
+        <field type="CharField" name="name">MALAYSIA</field>
+        <field type="CharField" name="printable_name">Malaysia</field>
+        <field type="CharField" name="iso3">MYS</field>
+        <field type="PositiveSmallIntegerField" name="numcode">458</field>
+    </object>
+    <object pk="MV" model="countries.country">
+        <field type="CharField" name="name">MALDIVES</field>
+        <field type="CharField" name="printable_name">Maldives</field>
+        <field type="CharField" name="iso3">MDV</field>
+        <field type="PositiveSmallIntegerField" name="numcode">462</field>
+    </object>
+    <object pk="ML" model="countries.country">
+        <field type="CharField" name="name">MALI</field>
+        <field type="CharField" name="printable_name">Mali</field>
+        <field type="CharField" name="iso3">MLI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">466</field>
+    </object>
+    <object pk="MT" model="countries.country">
+        <field type="CharField" name="name">MALTA</field>
+        <field type="CharField" name="printable_name">Malta</field>
+        <field type="CharField" name="iso3">MLT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">470</field>
+    </object>
+    <object pk="MH" model="countries.country">
+        <field type="CharField" name="name">MARSHALL ISLANDS</field>
+        <field type="CharField" name="printable_name">Marshall Islands</field>
+        <field type="CharField" name="iso3">MHL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">584</field>
+    </object>
+    <object pk="MQ" model="countries.country">
+        <field type="CharField" name="name">MARTINIQUE</field>
+        <field type="CharField" name="printable_name">Martinique</field>
+        <field type="CharField" name="iso3">MTQ</field>
+        <field type="PositiveSmallIntegerField" name="numcode">474</field>
+    </object>
+    <object pk="MR" model="countries.country">
+        <field type="CharField" name="name">MAURITANIA</field>
+        <field type="CharField" name="printable_name">Mauritania</field>
+        <field type="CharField" name="iso3">MRT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">478</field>
+    </object>
+    <object pk="MU" model="countries.country">
+        <field type="CharField" name="name">MAURITIUS</field>
+        <field type="CharField" name="printable_name">Mauritius</field>
+        <field type="CharField" name="iso3">MUS</field>
+        <field type="PositiveSmallIntegerField" name="numcode">480</field>
+    </object>
+    <object pk="YT" model="countries.country">
+        <field type="CharField" name="name">MAYOTTE</field>
+        <field type="CharField" name="printable_name">Mayotte</field>
+        <field type="CharField" name="iso3">MYT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">175</field>
+    </object>
+    <object pk="MX" model="countries.country">
+        <field type="CharField" name="name">MEXICO</field>
+        <field type="CharField" name="printable_name">Mexico</field>
+        <field type="CharField" name="iso3">MEX</field>
+        <field type="PositiveSmallIntegerField" name="numcode">484</field>
+    </object>
+    <object pk="FM" model="countries.country">
+        <field type="CharField" name="name">MICRONESIA, FEDERATED STATES OF</field>
+        <field type="CharField" name="printable_name">Micronesia, Federated States of</field>
+        <field type="CharField" name="iso3">FSM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">583</field>
+    </object>
+    <object pk="MD" model="countries.country">
+        <field type="CharField" name="name">MOLDOVA, REPUBLIC OF</field>
+        <field type="CharField" name="printable_name">Republic of Moldova</field>
+        <field type="CharField" name="iso3">MDA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">498</field>
+    </object>
+    <object pk="MC" model="countries.country">
+        <field type="CharField" name="name">MONACO</field>
+        <field type="CharField" name="printable_name">Monaco</field>
+        <field type="CharField" name="iso3">MCO</field>
+        <field type="PositiveSmallIntegerField" name="numcode">492</field>
+    </object>
+    <object pk="MN" model="countries.country">
+        <field type="CharField" name="name">MONGOLIA</field>
+        <field type="CharField" name="printable_name">Mongolia</field>
+        <field type="CharField" name="iso3">MNG</field>
+        <field type="PositiveSmallIntegerField" name="numcode">496</field>
+    </object>
+    <object pk="ME" model="countries.country">
+        <field type="CharField" name="name">MONTENEGRO</field>
+        <field type="CharField" name="printable_name">Montenegro</field>
+        <field type="CharField" name="iso3">MNE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">499</field>
+    </object>
+    <object pk="MS" model="countries.country">
+        <field type="CharField" name="name">MONTSERRAT</field>
+        <field type="CharField" name="printable_name">Montserrat</field>
+        <field type="CharField" name="iso3">MSR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">500</field>
+    </object>
+    <object pk="MA" model="countries.country">
+        <field type="CharField" name="name">MOROCCO</field>
+        <field type="CharField" name="printable_name">Morocco</field>
+        <field type="CharField" name="iso3">MAR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">504</field>
+    </object>
+    <object pk="MZ" model="countries.country">
+        <field type="CharField" name="name">MOZAMBIQUE</field>
+        <field type="CharField" name="printable_name">Mozambique</field>
+        <field type="CharField" name="iso3">MOZ</field>
+        <field type="PositiveSmallIntegerField" name="numcode">508</field>
+    </object>
+    <object pk="MM" model="countries.country">
+        <field type="CharField" name="name">MYANMAR</field>
+        <field type="CharField" name="printable_name">Myanmar</field>
+        <field type="CharField" name="iso3">MMR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">104</field>
+    </object>
+    <object pk="NA" model="countries.country">
+        <field type="CharField" name="name">NAMIBIA</field>
+        <field type="CharField" name="printable_name">Namibia</field>
+        <field type="CharField" name="iso3">NAM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">516</field>
+    </object>
+    <object pk="NR" model="countries.country">
+        <field type="CharField" name="name">NAURU</field>
+        <field type="CharField" name="printable_name">Nauru</field>
+        <field type="CharField" name="iso3">NRU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">520</field>
+    </object>
+    <object pk="NP" model="countries.country">
+        <field type="CharField" name="name">NEPAL</field>
+        <field type="CharField" name="printable_name">Nepal</field>
+        <field type="CharField" name="iso3">NPL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">524</field>
+    </object>
+    <object pk="NL" model="countries.country">
+        <field type="CharField" name="name">NETHERLANDS</field>
+        <field type="CharField" name="printable_name">Netherlands</field>
+        <field type="CharField" name="iso3">NLD</field>
+        <field type="PositiveSmallIntegerField" name="numcode">528</field>
+    </object>
+    <object pk="AN" model="countries.country">
+        <field type="CharField" name="name">NETHERLANDS ANTILLES</field>
+        <field type="CharField" name="printable_name">Netherlands Antilles</field>
+        <field type="CharField" name="iso3">ANT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">530</field>
+    </object>
+    <object pk="NC" model="countries.country">
+        <field type="CharField" name="name">NEW CALEDONIA</field>
+        <field type="CharField" name="printable_name">New Caledonia</field>
+        <field type="CharField" name="iso3">NCL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">540</field>
+    </object>
+    <object pk="NZ" model="countries.country">
+        <field type="CharField" name="name">NEW ZEALAND</field>
+        <field type="CharField" name="printable_name">New Zealand</field>
+        <field type="CharField" name="iso3">NZL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">554</field>
+    </object>
+    <object pk="NI" model="countries.country">
+        <field type="CharField" name="name">NICARAGUA</field>
+        <field type="CharField" name="printable_name">Nicaragua</field>
+        <field type="CharField" name="iso3">NIC</field>
+        <field type="PositiveSmallIntegerField" name="numcode">558</field>
+    </object>
+    <object pk="NE" model="countries.country">
+        <field type="CharField" name="name">NIGER</field>
+        <field type="CharField" name="printable_name">Niger</field>
+        <field type="CharField" name="iso3">NER</field>
+        <field type="PositiveSmallIntegerField" name="numcode">562</field>
+    </object>
+    <object pk="NG" model="countries.country">
+        <field type="CharField" name="name">NIGERIA</field>
+        <field type="CharField" name="printable_name">Nigeria</field>
+        <field type="CharField" name="iso3">NGA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">566</field>
+    </object>
+    <object pk="NU" model="countries.country">
+        <field type="CharField" name="name">NIUE</field>
+        <field type="CharField" name="printable_name">Niue</field>
+        <field type="CharField" name="iso3">NIU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">570</field>
+    </object>
+    <object pk="NF" model="countries.country">
+        <field type="CharField" name="name">NORFOLK ISLAND</field>
+        <field type="CharField" name="printable_name">Norfolk Island</field>
+        <field type="CharField" name="iso3">NFK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">574</field>
+    </object>
+    <object pk="MP" model="countries.country">
+        <field type="CharField" name="name">NORTHERN MARIANA ISLANDS</field>
+        <field type="CharField" name="printable_name">Northern Mariana Islands</field>
+        <field type="CharField" name="iso3">MNP</field>
+        <field type="PositiveSmallIntegerField" name="numcode">580</field>
+    </object>
+    <object pk="NO" model="countries.country">
+        <field type="CharField" name="name">NORWAY</field>
+        <field type="CharField" name="printable_name">Norway</field>
+        <field type="CharField" name="iso3">NOR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">578</field>
+    </object>
+    <object pk="OM" model="countries.country">
+        <field type="CharField" name="name">OMAN</field>
+        <field type="CharField" name="printable_name">Oman</field>
+        <field type="CharField" name="iso3">OMN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">512</field>
+    </object>
+    <object pk="PK" model="countries.country">
+        <field type="CharField" name="name">PAKISTAN</field>
+        <field type="CharField" name="printable_name">Pakistan</field>
+        <field type="CharField" name="iso3">PAK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">586</field>
+    </object>
+    <object pk="PW" model="countries.country">
+        <field type="CharField" name="name">PALAU</field>
+        <field type="CharField" name="printable_name">Palau</field>
+        <field type="CharField" name="iso3">PLW</field>
+        <field type="PositiveSmallIntegerField" name="numcode">585</field>
+    </object>
+    <object pk="PS" model="countries.country">
+        <field type="CharField" name="name">PALESTINIAN TERRITORY, OCCUPIED</field>
+        <field type="CharField" name="printable_name">Occupied Palestinian Territory</field>
+        <field type="CharField" name="iso3">PSE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">275</field>
+    </object>
+    <object pk="PA" model="countries.country">
+        <field type="CharField" name="name">PANAMA</field>
+        <field type="CharField" name="printable_name">Panama</field>
+        <field type="CharField" name="iso3">PAN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">591</field>
+    </object>
+    <object pk="PG" model="countries.country">
+        <field type="CharField" name="name">PAPUA NEW GUINEA</field>
+        <field type="CharField" name="printable_name">Papua New Guinea</field>
+        <field type="CharField" name="iso3">PNG</field>
+        <field type="PositiveSmallIntegerField" name="numcode">598</field>
+    </object>
+    <object pk="PY" model="countries.country">
+        <field type="CharField" name="name">PARAGUAY</field>
+        <field type="CharField" name="printable_name">Paraguay</field>
+        <field type="CharField" name="iso3">PRY</field>
+        <field type="PositiveSmallIntegerField" name="numcode">600</field>
+    </object>
+    <object pk="PE" model="countries.country">
+        <field type="CharField" name="name">PERU</field>
+        <field type="CharField" name="printable_name">Peru</field>
+        <field type="CharField" name="iso3">PER</field>
+        <field type="PositiveSmallIntegerField" name="numcode">604</field>
+    </object>
+    <object pk="PH" model="countries.country">
+        <field type="CharField" name="name">PHILIPPINES</field>
+        <field type="CharField" name="printable_name">Philippines</field>
+        <field type="CharField" name="iso3">PHL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">608</field>
+    </object>
+    <object pk="PN" model="countries.country">
+        <field type="CharField" name="name">PITCAIRN</field>
+        <field type="CharField" name="printable_name">Pitcairn</field>
+        <field type="CharField" name="iso3">PCN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">612</field>
+    </object>
+    <object pk="PL" model="countries.country">
+        <field type="CharField" name="name">POLAND</field>
+        <field type="CharField" name="printable_name">Poland</field>
+        <field type="CharField" name="iso3">POL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">616</field>
+    </object>
+    <object pk="PT" model="countries.country">
+        <field type="CharField" name="name">PORTUGAL</field>
+        <field type="CharField" name="printable_name">Portugal</field>
+        <field type="CharField" name="iso3">PRT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">620</field>
+    </object>
+    <object pk="PR" model="countries.country">
+        <field type="CharField" name="name">PUERTO RICO</field>
+        <field type="CharField" name="printable_name">Puerto Rico</field>
+        <field type="CharField" name="iso3">PRI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">630</field>
+    </object>
+    <object pk="QA" model="countries.country">
+        <field type="CharField" name="name">QATAR</field>
+        <field type="CharField" name="printable_name">Qatar</field>
+        <field type="CharField" name="iso3">QAT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">634</field>
+    </object>
+    <object pk="RE" model="countries.country">
+        <field type="CharField" name="name">REUNION</field>
+        <field type="CharField" name="printable_name">Réunion</field>
+        <field type="CharField" name="iso3">REU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">638</field>
+    </object>
+    <object pk="RO" model="countries.country">
+        <field type="CharField" name="name">ROMANIA</field>
+        <field type="CharField" name="printable_name">Romania</field>
+        <field type="CharField" name="iso3">ROU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">642</field>
+    </object>
+    <object pk="RU" model="countries.country">
+        <field type="CharField" name="name">RUSSIAN FEDERATION</field>
+        <field type="CharField" name="printable_name">Russian Federation</field>
+        <field type="CharField" name="iso3">RUS</field>
+        <field type="PositiveSmallIntegerField" name="numcode">643</field>
+    </object>
+    <object pk="RW" model="countries.country">
+        <field type="CharField" name="name">RWANDA</field>
+        <field type="CharField" name="printable_name">Rwanda</field>
+        <field type="CharField" name="iso3">RWA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">646</field>
+    </object>
+    <object pk="SH" model="countries.country">
+        <field type="CharField" name="name">SAINT HELENA</field>
+        <field type="CharField" name="printable_name">Saint Helena</field>
+        <field type="CharField" name="iso3">SHN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">654</field>
+    </object>
+    <object pk="KN" model="countries.country">
+        <field type="CharField" name="name">SAINT KITTS AND NEVIS</field>
+        <field type="CharField" name="printable_name">Saint Kitts and Nevis</field>
+        <field type="CharField" name="iso3">KNA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">659</field>
+    </object>
+    <object pk="LC" model="countries.country">
+        <field type="CharField" name="name">SAINT LUCIA</field>
+        <field type="CharField" name="printable_name">Saint Lucia</field>
+        <field type="CharField" name="iso3">LCA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">662</field>
+    </object>
+    <object pk="PM" model="countries.country">
+        <field type="CharField" name="name">SAINT PIERRE AND MIQUELON</field>
+        <field type="CharField" name="printable_name">Saint Pierre and Miquelon</field>
+        <field type="CharField" name="iso3">SPM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">666</field>
+    </object>
+    <object pk="VC" model="countries.country">
+        <field type="CharField" name="name">SAINT VINCENT AND THE GRENADINES</field>
+        <field type="CharField" name="printable_name">Saint Vincent and the Grenadines</field>
+        <field type="CharField" name="iso3">VCT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">670</field>
+    </object>
+    <object pk="WS" model="countries.country">
+        <field type="CharField" name="name">SAMOA</field>
+        <field type="CharField" name="printable_name">Samoa</field>
+        <field type="CharField" name="iso3">WSM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">882</field>
+    </object>
+    <object pk="SM" model="countries.country">
+        <field type="CharField" name="name">SAN MARINO</field>
+        <field type="CharField" name="printable_name">San Marino</field>
+        <field type="CharField" name="iso3">SMR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">674</field>
+    </object>
+    <object pk="ST" model="countries.country">
+        <field type="CharField" name="name">SAO TOME AND PRINCIPE</field>
+        <field type="CharField" name="printable_name">Sao Tome and Principe</field>
+        <field type="CharField" name="iso3">STP</field>
+        <field type="PositiveSmallIntegerField" name="numcode">678</field>
+    </object>
+    <object pk="SA" model="countries.country">
+        <field type="CharField" name="name">SAUDI ARABIA</field>
+        <field type="CharField" name="printable_name">Saudi Arabia</field>
+        <field type="CharField" name="iso3">SAU</field>
+        <field type="PositiveSmallIntegerField" name="numcode">682</field>
+    </object>
+    <object pk="SN" model="countries.country">
+        <field type="CharField" name="name">SENEGAL</field>
+        <field type="CharField" name="printable_name">Senegal</field>
+        <field type="CharField" name="iso3">SEN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">686</field>
+    </object>
+    <object pk="RS" model="countries.country">
+        <field type="CharField" name="name">SERBIA</field>
+        <field type="CharField" name="printable_name">Serbia</field>
+        <field type="CharField" name="iso3">SRB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">688</field>
+    </object>
+    <object pk="SC" model="countries.country">
+        <field type="CharField" name="name">SEYCHELLES</field>
+        <field type="CharField" name="printable_name">Seychelles</field>
+        <field type="CharField" name="iso3">SYC</field>
+        <field type="PositiveSmallIntegerField" name="numcode">690</field>
+    </object>
+    <object pk="SL" model="countries.country">
+        <field type="CharField" name="name">SIERRA LEONE</field>
+        <field type="CharField" name="printable_name">Sierra Leone</field>
+        <field type="CharField" name="iso3">SLE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">694</field>
+    </object>
+    <object pk="SG" model="countries.country">
+        <field type="CharField" name="name">SINGAPORE</field>
+        <field type="CharField" name="printable_name">Singapore</field>
+        <field type="CharField" name="iso3">SGP</field>
+        <field type="PositiveSmallIntegerField" name="numcode">702</field>
+    </object>
+    <object pk="SK" model="countries.country">
+        <field type="CharField" name="name">SLOVAKIA</field>
+        <field type="CharField" name="printable_name">Slovakia</field>
+        <field type="CharField" name="iso3">SVK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">703</field>
+    </object>
+    <object pk="SI" model="countries.country">
+        <field type="CharField" name="name">SLOVENIA</field>
+        <field type="CharField" name="printable_name">Slovenia</field>
+        <field type="CharField" name="iso3">SVN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">705</field>
+    </object>
+    <object pk="SB" model="countries.country">
+        <field type="CharField" name="name">SOLOMON ISLANDS</field>
+        <field type="CharField" name="printable_name">Solomon Islands</field>
+        <field type="CharField" name="iso3">SLB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">90</field>
+    </object>
+    <object pk="SO" model="countries.country">
+        <field type="CharField" name="name">SOMALIA</field>
+        <field type="CharField" name="printable_name">Somalia</field>
+        <field type="CharField" name="iso3">SOM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">706</field>
+    </object>
+    <object pk="ZA" model="countries.country">
+        <field type="CharField" name="name">SOUTH AFRICA</field>
+        <field type="CharField" name="printable_name">South Africa</field>
+        <field type="CharField" name="iso3">ZAF</field>
+        <field type="PositiveSmallIntegerField" name="numcode">710</field>
+    </object>
+    <object pk="GS" model="countries.country">
+        <field type="CharField" name="name">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</field>
+        <field type="CharField" name="printable_name">South Georgia and the South Sandwich Islands</field>
+        <field type="CharField" name="iso3">SGS</field>
+        <field type="PositiveSmallIntegerField" name="numcode">239</field>
+    </object>
+    <object pk="ES" model="countries.country">
+        <field type="CharField" name="name">SPAIN</field>
+        <field type="CharField" name="printable_name">Spain</field>
+        <field type="CharField" name="iso3">ESP</field>
+        <field type="PositiveSmallIntegerField" name="numcode">724</field>
+    </object>
+    <object pk="LK" model="countries.country">
+        <field type="CharField" name="name">SRI LANKA</field>
+        <field type="CharField" name="printable_name">Sri Lanka</field>
+        <field type="CharField" name="iso3">LKA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">144</field>
+    </object>
+    <object pk="SD" model="countries.country">
+        <field type="CharField" name="name">SUDAN</field>
+        <field type="CharField" name="printable_name">Sudan</field>
+        <field type="CharField" name="iso3">SDN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">736</field>
+    </object>
+    <object pk="SR" model="countries.country">
+        <field type="CharField" name="name">SURINAME</field>
+        <field type="CharField" name="printable_name">Suriname</field>
+        <field type="CharField" name="iso3">SUR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">740</field>
+    </object>
+    <object pk="SJ" model="countries.country">
+        <field type="CharField" name="name">SVALBARD AND JAN MAYEN</field>
+        <field type="CharField" name="printable_name">Svalbard and Jan Mayen Islands</field>
+        <field type="CharField" name="iso3">SJM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">744</field>
+    </object>
+    <object pk="SZ" model="countries.country">
+        <field type="CharField" name="name">SWAZILAND</field>
+        <field type="CharField" name="printable_name">Swaziland</field>
+        <field type="CharField" name="iso3">SWZ</field>
+        <field type="PositiveSmallIntegerField" name="numcode">748</field>
+    </object>
+    <object pk="SE" model="countries.country">
+        <field type="CharField" name="name">SWEDEN</field>
+        <field type="CharField" name="printable_name">Sweden</field>
+        <field type="CharField" name="iso3">SWE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">752</field>
+    </object>
+    <object pk="CH" model="countries.country">
+        <field type="CharField" name="name">SWITZERLAND</field>
+        <field type="CharField" name="printable_name">Switzerland</field>
+        <field type="CharField" name="iso3">CHE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">756</field>
+    </object>
+    <object pk="SY" model="countries.country">
+        <field type="CharField" name="name">SYRIAN ARAB REPUBLIC</field>
+        <field type="CharField" name="printable_name">Syrian Arab Republic</field>
+        <field type="CharField" name="iso3">SYR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">760</field>
+    </object>
+    <object pk="TW" model="countries.country">
+        <field type="CharField" name="name">TAIWAN, PROVINCE OF CHINA</field>
+        <field type="CharField" name="printable_name">Taiwan, Province of China</field>
+        <field type="CharField" name="iso3">TWN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">158</field>
+    </object>
+    <object pk="TJ" model="countries.country">
+        <field type="CharField" name="name">TAJIKISTAN</field>
+        <field type="CharField" name="printable_name">Tajikistan</field>
+        <field type="CharField" name="iso3">TJK</field>
+        <field type="PositiveSmallIntegerField" name="numcode">762</field>
+    </object>
+    <object pk="TZ" model="countries.country">
+        <field type="CharField" name="name">TANZANIA, UNITED REPUBLIC OF</field>
+        <field type="CharField" name="printable_name">United Republic of Tanzania</field>
+        <field type="CharField" name="iso3">TZA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">834</field>
+    </object>
+    <object pk="TH" model="countries.country">
+        <field type="CharField" name="name">THAILAND</field>
+        <field type="CharField" name="printable_name">Thailand</field>
+        <field type="CharField" name="iso3">THA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">764</field>
+    </object>
+    <object pk="TL" model="countries.country">
+        <field type="CharField" name="name">TIMOR-LESTE</field>
+        <field type="CharField" name="printable_name">Timor-Leste</field>
+        <field type="CharField" name="iso3">TLS</field>
+        <field type="PositiveSmallIntegerField" name="numcode">626</field>
+    </object>
+    <object pk="TG" model="countries.country">
+        <field type="CharField" name="name">TOGO</field>
+        <field type="CharField" name="printable_name">Togo</field>
+        <field type="CharField" name="iso3">TGO</field>
+        <field type="PositiveSmallIntegerField" name="numcode">768</field>
+    </object>
+    <object pk="TK" model="countries.country">
+        <field type="CharField" name="name">TOKELAU</field>
+        <field type="CharField" name="printable_name">Tokelau</field>
+        <field type="CharField" name="iso3">TKL</field>
+        <field type="PositiveSmallIntegerField" name="numcode">772</field>
+    </object>
+    <object pk="TO" model="countries.country">
+        <field type="CharField" name="name">TONGA</field>
+        <field type="CharField" name="printable_name">Tonga</field>
+        <field type="CharField" name="iso3">TON</field>
+        <field type="PositiveSmallIntegerField" name="numcode">776</field>
+    </object>
+    <object pk="TT" model="countries.country">
+        <field type="CharField" name="name">TRINIDAD AND TOBAGO</field>
+        <field type="CharField" name="printable_name">Trinidad and Tobago</field>
+        <field type="CharField" name="iso3">TTO</field>
+        <field type="PositiveSmallIntegerField" name="numcode">780</field>
+    </object>
+    <object pk="TN" model="countries.country">
+        <field type="CharField" name="name">TUNISIA</field>
+        <field type="CharField" name="printable_name">Tunisia</field>
+        <field type="CharField" name="iso3">TUN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">788</field>
+    </object>
+    <object pk="TR" model="countries.country">
+        <field type="CharField" name="name">TURKEY</field>
+        <field type="CharField" name="printable_name">Turkey</field>
+        <field type="CharField" name="iso3">TUR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">792</field>
+    </object>
+    <object pk="TM" model="countries.country">
+        <field type="CharField" name="name">TURKMENISTAN</field>
+        <field type="CharField" name="printable_name">Turkmenistan</field>
+        <field type="CharField" name="iso3">TKM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">795</field>
+    </object>
+    <object pk="TC" model="countries.country">
+        <field type="CharField" name="name">TURKS AND CAICOS ISLANDS</field>
+        <field type="CharField" name="printable_name">Turks and Caicos Islands</field>
+        <field type="CharField" name="iso3">TCA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">796</field>
+    </object>
+    <object pk="TV" model="countries.country">
+        <field type="CharField" name="name">TUVALU</field>
+        <field type="CharField" name="printable_name">Tuvalu</field>
+        <field type="CharField" name="iso3">TUV</field>
+        <field type="PositiveSmallIntegerField" name="numcode">798</field>
+    </object>
+    <object pk="UG" model="countries.country">
+        <field type="CharField" name="name">UGANDA</field>
+        <field type="CharField" name="printable_name">Uganda</field>
+        <field type="CharField" name="iso3">UGA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">800</field>
+    </object>
+    <object pk="UA" model="countries.country">
+        <field type="CharField" name="name">UKRAINE</field>
+        <field type="CharField" name="printable_name">Ukraine</field>
+        <field type="CharField" name="iso3">UKR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">804</field>
+    </object>
+    <object pk="AE" model="countries.country">
+        <field type="CharField" name="name">UNITED ARAB EMIRATES</field>
+        <field type="CharField" name="printable_name">United Arab Emirates</field>
+        <field type="CharField" name="iso3">ARE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">784</field>
+    </object>
+    <object pk="GB" model="countries.country">
+        <field type="CharField" name="name">UNITED KINGDOM</field>
+        <field type="CharField" name="printable_name">United Kingdom of Great Britain and Northern Ireland</field>
+        <field type="CharField" name="iso3">GBR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">826</field>
+    </object>
+    <object pk="US" model="countries.country">
+        <field type="CharField" name="name">UNITED STATES</field>
+        <field type="CharField" name="printable_name">United States of America</field>
+        <field type="CharField" name="iso3">USA</field>
+        <field type="PositiveSmallIntegerField" name="numcode">840</field>
+    </object>
+    <object pk="UM" model="countries.country">
+        <field type="CharField" name="name">UNITED STATES MINOR OUTLYING ISLANDS</field>
+        <field type="CharField" name="printable_name">United States Minor Outlying Islands</field>
+        <field type="CharField" name="iso3">UMI</field>
+        <field type="PositiveSmallIntegerField" name="numcode">581</field>
+    </object>
+    <object pk="UY" model="countries.country">
+        <field type="CharField" name="name">URUGUAY</field>
+        <field type="CharField" name="printable_name">Uruguay</field>
+        <field type="CharField" name="iso3">URY</field>
+        <field type="PositiveSmallIntegerField" name="numcode">858</field>
+    </object>
+    <object pk="UZ" model="countries.country">
+        <field type="CharField" name="name">UZBEKISTAN</field>
+        <field type="CharField" name="printable_name">Uzbekistan</field>
+        <field type="CharField" name="iso3">UZB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">860</field>
+    </object>
+    <object pk="VU" model="countries.country">
+        <field type="CharField" name="name">VANUATU</field>
+        <field type="CharField" name="printable_name">Vanuatu</field>
+        <field type="CharField" name="iso3">VUT</field>
+        <field type="PositiveSmallIntegerField" name="numcode">548</field>
+    </object>
+    <object pk="VE" model="countries.country">
+        <field type="CharField" name="name">VENEZUELA</field>
+        <field type="CharField" name="printable_name">Venezuela (Bolivarian Republic of)</field>
+        <field type="CharField" name="iso3">VEN</field>
+        <field type="PositiveSmallIntegerField" name="numcode">862</field>
+    </object>
+    <object pk="VN" model="countries.country">
+        <field type="CharField" name="name">VIET NAM</field>
+        <field type="CharField" name="printable_name">Viet Nam</field>
+        <field type="CharField" name="iso3">VNM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">704</field>
+    </object>
+    <object pk="VG" model="countries.country">
+        <field type="CharField" name="name">VIRGIN ISLANDS, BRITISH</field>
+        <field type="CharField" name="printable_name">British Virgin Islands</field>
+        <field type="CharField" name="iso3">VGB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">92</field>
+    </object>
+    <object pk="VI" model="countries.country">
+        <field type="CharField" name="name">VIRGIN ISLANDS, U.S.</field>
+        <field type="CharField" name="printable_name">United States Virgin Islands</field>
+        <field type="CharField" name="iso3">VIR</field>
+        <field type="PositiveSmallIntegerField" name="numcode">850</field>
+    </object>
+    <object pk="WF" model="countries.country">
+        <field type="CharField" name="name">WALLIS AND FUTUNA</field>
+        <field type="CharField" name="printable_name">Wallis and Futuna Islands</field>
+        <field type="CharField" name="iso3">WLF</field>
+        <field type="PositiveSmallIntegerField" name="numcode">876</field>
+    </object>
+    <object pk="EH" model="countries.country">
+        <field type="CharField" name="name">WESTERN SAHARA</field>
+        <field type="CharField" name="printable_name">Western Sahara</field>
+        <field type="CharField" name="iso3">ESH</field>
+        <field type="PositiveSmallIntegerField" name="numcode">732</field>
+    </object>
+    <object pk="YE" model="countries.country">
+        <field type="CharField" name="name">YEMEN</field>
+        <field type="CharField" name="printable_name">Yemen</field>
+        <field type="CharField" name="iso3">YEM</field>
+        <field type="PositiveSmallIntegerField" name="numcode">887</field>
+    </object>
+    <object pk="ZM" model="countries.country">
+        <field type="CharField" name="name">ZAMBIA</field>
+        <field type="CharField" name="printable_name">Zambia</field>
+        <field type="CharField" name="iso3">ZMB</field>
+        <field type="PositiveSmallIntegerField" name="numcode">894</field>
+    </object>
+    <object pk="ZW" model="countries.country">
+        <field type="CharField" name="name">ZIMBABWE</field>
+        <field type="CharField" name="printable_name">Zimbabwe</field>
+        <field type="CharField" name="iso3">ZWE</field>
+        <field type="PositiveSmallIntegerField" name="numcode">716</field>
+    </object>
+    
+    <object pk="1" model="countries.usstate">
+        <field type="CharField" name="name">Alabama</field>
+        <field type="CharField" name="abbrev">AL</field>
+    </object>
+    <object pk="2" model="countries.usstate">
+        <field type="CharField" name="name">Alaska</field>
+        <field type="CharField" name="abbrev">AK</field>
+    </object>
+    <object pk="3" model="countries.usstate">
+        <field type="CharField" name="name">American Samoa</field>
+        <field type="CharField" name="abbrev">AS</field>
+    </object>
+    <object pk="4" model="countries.usstate">
+        <field type="CharField" name="name">Arizona</field>
+        <field type="CharField" name="abbrev">AZ</field>
+    </object>
+    <object pk="5" model="countries.usstate">
+        <field type="CharField" name="name">Arkansas</field>
+        <field type="CharField" name="abbrev">AR</field>
+    </object>
+    <object pk="6" model="countries.usstate">
+        <field type="CharField" name="name">California</field>
+        <field type="CharField" name="abbrev">CA</field>
+    </object>
+    <object pk="7" model="countries.usstate">
+        <field type="CharField" name="name">Colorado</field>
+        <field type="CharField" name="abbrev">CO</field>
+    </object>
+    <object pk="8" model="countries.usstate">
+        <field type="CharField" name="name">Connecticut</field>
+        <field type="CharField" name="abbrev">CT</field>
+    </object>
+    <object pk="9" model="countries.usstate">
+        <field type="CharField" name="name">Delaware</field>
+        <field type="CharField" name="abbrev">DE</field>
+    </object>
+    <object pk="10" model="countries.usstate">
+        <field type="CharField" name="name">District of Columbia</field>
+        <field type="CharField" name="abbrev">DC</field>
+    </object>
+    <object pk="11" model="countries.usstate">
+        <field type="CharField" name="name">Federated States of Micronesia</field>
+        <field type="CharField" name="abbrev">FM</field>
+    </object>
+    <object pk="12" model="countries.usstate">
+        <field type="CharField" name="name">Florida</field>
+        <field type="CharField" name="abbrev">FL</field>
+    </object>
+    <object pk="13" model="countries.usstate">
+        <field type="CharField" name="name">Georgia</field>
+        <field type="CharField" name="abbrev">GA</field>
+    </object>
+    <object pk="14" model="countries.usstate">
+        <field type="CharField" name="name">Guam</field>
+        <field type="CharField" name="abbrev">GU</field>
+    </object>
+    <object pk="15" model="countries.usstate">
+        <field type="CharField" name="name">Hawaii</field>
+        <field type="CharField" name="abbrev">HI</field>
+    </object>
+    <object pk="16" model="countries.usstate">
+        <field type="CharField" name="name">Idaho</field>
+        <field type="CharField" name="abbrev">ID</field>
+    </object>
+    <object pk="17" model="countries.usstate">
+        <field type="CharField" name="name">Illinois</field>
+        <field type="CharField" name="abbrev">IL</field>
+    </object>
+    <object pk="18" model="countries.usstate">
+        <field type="CharField" name="name">Indiana</field>
+        <field type="CharField" name="abbrev">IN</field>
+    </object>
+    <object pk="19" model="countries.usstate">
+        <field type="CharField" name="name">Iowa</field>
+        <field type="CharField" name="abbrev">IA</field>
+    </object>
+    <object pk="20" model="countries.usstate">
+        <field type="CharField" name="name">Kansas</field>
+        <field type="CharField" name="abbrev">KS</field>
+    </object>
+    <object pk="21" model="countries.usstate">
+        <field type="CharField" name="name">Kentucky</field>
+        <field type="CharField" name="abbrev">KY</field>
+    </object>
+    <object pk="22" model="countries.usstate">
+        <field type="CharField" name="name">Louisiana</field>
+        <field type="CharField" name="abbrev">LA</field>
+    </object>
+    <object pk="23" model="countries.usstate">
+        <field type="CharField" name="name">Maine</field>
+        <field type="CharField" name="abbrev">ME</field>
+    </object>
+    <object pk="24" model="countries.usstate">
+        <field type="CharField" name="name">Marshall Islands</field>
+        <field type="CharField" name="abbrev">MH</field>
+    </object>
+    <object pk="25" model="countries.usstate">
+        <field type="CharField" name="name">Maryland</field>
+        <field type="CharField" name="abbrev">MD</field>
+    </object>
+    <object pk="26" model="countries.usstate">
+        <field type="CharField" name="name">Massachusetts</field>
+        <field type="CharField" name="abbrev">MA</field>
+    </object>
+    <object pk="27" model="countries.usstate">
+        <field type="CharField" name="name">Michigan</field>
+        <field type="CharField" name="abbrev">MI</field>
+    </object>
+    <object pk="28" model="countries.usstate">
+        <field type="CharField" name="name">Minnesota</field>
+        <field type="CharField" name="abbrev">MN</field>
+    </object>
+    <object pk="29" model="countries.usstate">
+        <field type="CharField" name="name">Mississippi</field>
+        <field type="CharField" name="abbrev">MS</field>
+    </object>
+    <object pk="30" model="countries.usstate">
+        <field type="CharField" name="name">Missouri</field>
+        <field type="CharField" name="abbrev">MO</field>
+    </object>
+    <object pk="31" model="countries.usstate">
+        <field type="CharField" name="name">Montana</field>
+        <field type="CharField" name="abbrev">MT</field>
+    </object>
+    <object pk="32" model="countries.usstate">
+        <field type="CharField" name="name">Nebraska</field>
+        <field type="CharField" name="abbrev">NE</field>
+    </object>
+    <object pk="33" model="countries.usstate">
+        <field type="CharField" name="name">Nevada</field>
+        <field type="CharField" name="abbrev">NV</field>
+    </object>
+    <object pk="34" model="countries.usstate">
+        <field type="CharField" name="name">New Hampshire</field>
+        <field type="CharField" name="abbrev">NH</field>
+    </object>
+    <object pk="35" model="countries.usstate">
+        <field type="CharField" name="name">New Jersey</field>
+        <field type="CharField" name="abbrev">NJ</field>
+    </object>
+    <object pk="36" model="countries.usstate">
+        <field type="CharField" name="name">New Mexico</field>
+        <field type="CharField" name="abbrev">NM</field>
+    </object>
+    <object pk="37" model="countries.usstate">
+        <field type="CharField" name="name">New York</field>
+        <field type="CharField" name="abbrev">NY</field>
+    </object>
+    <object pk="38" model="countries.usstate">
+        <field type="CharField" name="name">North Carolina</field>
+        <field type="CharField" name="abbrev">NC</field>
+    </object>
+    <object pk="39" model="countries.usstate">
+        <field type="CharField" name="name">North Dakota</field>
+        <field type="CharField" name="abbrev">ND</field>
+    </object>
+    <object pk="40" model="countries.usstate">
+        <field type="CharField" name="name">Northern Mariana Islands</field>
+        <field type="CharField" name="abbrev">MP</field>
+    </object>
+    <object pk="41" model="countries.usstate">
+        <field type="CharField" name="name">Ohio</field>
+        <field type="CharField" name="abbrev">OH</field>
+    </object>
+    <object pk="42" model="countries.usstate">
+        <field type="CharField" name="name">Oklahoma</field>
+        <field type="CharField" name="abbrev">OK</field>
+    </object>
+    <object pk="43" model="countries.usstate">
+        <field type="CharField" name="name">Oregon</field>
+        <field type="CharField" name="abbrev">OR</field>
+    </object>
+    <object pk="44" model="countries.usstate">
+        <field type="CharField" name="name">Palau</field>
+        <field type="CharField" name="abbrev">PW</field>
+    </object>
+    <object pk="45" model="countries.usstate">
+        <field type="CharField" name="name">Pennsylvania</field>
+        <field type="CharField" name="abbrev">PA</field>
+    </object>
+    <object pk="46" model="countries.usstate">
+        <field type="CharField" name="name">Puerto Rico</field>
+        <field type="CharField" name="abbrev">PR</field>
+    </object>
+    <object pk="47" model="countries.usstate">
+        <field type="CharField" name="name">Rhode Island</field>
+        <field type="CharField" name="abbrev">RI</field>
+    </object>
+    <object pk="48" model="countries.usstate">
+        <field type="CharField" name="name">South Carolina</field>
+        <field type="CharField" name="abbrev">SC</field>
+    </object>
+    <object pk="49" model="countries.usstate">
+        <field type="CharField" name="name">South Dakota</field>
+        <field type="CharField" name="abbrev">SD</field>
+    </object>
+    <object pk="50" model="countries.usstate">
+        <field type="CharField" name="name">Tennessee</field>
+        <field type="CharField" name="abbrev">TN</field>
+    </object>
+    <object pk="51" model="countries.usstate">
+        <field type="CharField" name="name">Texas</field>
+        <field type="CharField" name="abbrev">TX</field>
+    </object>
+    <object pk="52" model="countries.usstate">
+        <field type="CharField" name="name">Utah</field>
+        <field type="CharField" name="abbrev">UT</field>
+    </object>
+    <object pk="53" model="countries.usstate">
+        <field type="CharField" name="name">Vermont</field>
+        <field type="CharField" name="abbrev">VT</field>
+    </object>
+    <object pk="54" model="countries.usstate">
+        <field type="CharField" name="name">Virgin Islands</field>
+        <field type="CharField" name="abbrev">VI</field>
+    </object>
+    <object pk="55" model="countries.usstate">
+        <field type="CharField" name="name">Virginia</field>
+        <field type="CharField" name="abbrev">VA</field>
+    </object>
+    <object pk="56" model="countries.usstate">
+        <field type="CharField" name="name">Washington</field>
+        <field type="CharField" name="abbrev">WA</field>
+    </object>
+    <object pk="57" model="countries.usstate">
+        <field type="CharField" name="name">West Virginia</field>
+        <field type="CharField" name="abbrev">WV</field>
+    </object>
+    <object pk="58" model="countries.usstate">
+        <field type="CharField" name="name">Wisconsin</field>
+        <field type="CharField" name="abbrev">WI</field>
+    </object>
+    <object pk="59" model="countries.usstate">
+        <field type="CharField" name="name">Wyoming</field>
+        <field type="CharField" name="abbrev">WY</field>
+    </object>
+    <object pk="60" model="countries.usstate">
+        <field type="CharField" name="name">Armed Forces Africa</field>
+        <field type="CharField" name="abbrev">AE</field>
+    </object>
+    <object pk="61" model="countries.usstate">
+        <field type="CharField" name="name">Armed Forces Americas (except Canada)</field>
+        <field type="CharField" name="abbrev">AA</field>
+    </object>
+    <object pk="62" model="countries.usstate">
+        <field type="CharField" name="name">Armed Forces Canada</field>
+        <field type="CharField" name="abbrev">AE</field>
+    </object>
+    <object pk="63" model="countries.usstate">
+        <field type="CharField" name="name">Armed Forces Europe</field>
+        <field type="CharField" name="abbrev">AE</field>
+    </object>
+    <object pk="64" model="countries.usstate">
+        <field type="CharField" name="name">Armed Forces Middle East</field>
+        <field type="CharField" name="abbrev">AE</field>
+    </object>
+    <object pk="65" model="countries.usstate">
+        <field type="CharField" name="name">Armed Forces Pacific</field>
+        <field type="CharField" name="abbrev">AP</field>
+    </object>
+</django-objects>

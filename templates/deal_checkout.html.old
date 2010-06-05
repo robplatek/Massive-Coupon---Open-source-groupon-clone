@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+
+{% block extralinks %}
+        <link type="text/css" rel="stylesheet" href="/media/js/css/ui-lightness/jquery-ui-1.7.2.custom.css" />
+
+<style type="text/css">
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+
+div.error-box  {
+    border: 1px solid #d00000;
+    background-color: #F79992;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 6px 12px;
+    color: white;
+}
+
+div.error-box div.title  {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+div.error-msg {
+    width: 250px; 
+    color: #c00;
+    float: left;
+}
+.toggleLink {
+  font-size: 80%;
+}
+
+.form-label {
+  margin-top:20px;
+  margin-bottom: 5px;
+}
+
+.hint {
+  font-size: 80%;
+  display: none;
+  color: #f00;
+}
+
+.field {
+  width: 110px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+.double_field {
+  width: 230px;
+  margin-bottom: 15px;
+  height: 50px;
+
+}
+
+.passwd_field {
+  width: 390px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+#quantity_box {
+  margin-bottom: 15px;
+}
+
+</style>
+
+
+{% endblock %}
+
+{% block extrascripts %}
+
+{% endblock %}
+
+{% block extrajs %}
+    function CurrencyFormatted(amount)
+    {
+        var i = parseFloat(amount);
+        if(isNaN(i)) { i = 0.00; }
+        var minus = '';
+        if(i < 0) { minus = '-'; }
+        i = Math.abs(i);
+        i = parseInt((i + .005) * 100);
+        i = i / 100;
+        s = new String(i);
+        if(s.indexOf('.') < 0) { s += '.00'; }
+        if(s.indexOf('.') == (s.length - 2)) { s += '0'; }
+        s = minus + s;
+        return s;
+    }
+
+    function update_estimated_quote()
+    {
+      var total = 0;
+
+      if( parseInt( $("#id_quantity").val() ) > 0 ) {
+        total = parseFloat( {{ deal.deal_price }} * parseInt($("#id_quantity").val()) ) ;
+      }
+
+      $('#id_estimate').html('$' + CurrencyFormatted(total));
+
+    }
+
+    function submitForm(form)
+    {
+      $.Watermark.HideAll();
+    }
+
+    $().ready(function(){
+
+      $("#id_quantity").keyup(function(){
+        update_estimated_quote();
+      });
+
+      update_estimated_quote();
+
+      // Setup hint tooltips and error messages
+      {% for f in form %}
+      {% if f.help_text %}showHint('#{{ f.auto_id }}', '{{ f.help_text }}');{% endif %}
+      {% endfor %}
+
+
+  });
+
+
+{% endblock %}
+
+{% block content %}
+
+<div class="main-body" style="">
+<br><br>
+  <h3 style="font-size: 190%; font-weight: bold;">{{ deal.ttitle }}</h3>
+<br>
+
+<br><br>
+{% comment %}
+  {{ deal.category }}
+
+  {{ deal.date_published }}
+  {{ deal.retail_price }}
+  {{ deal.deal_price }}
+
+  {{ deal.discount_percentage }}
+  {{ deal.discount_value }}
+
+  {{ deal.auction_duration }}
+
+  {{ deal.is_deal_on }}
+
+  {{ deal.fine_print }}
+  {{ deal.highlights }}
+  {{ deal.tipping_point }}
+
+  {{ deal.description }}
+  {{ deal.company_desc }}
+
+  {{ deal.image }}
+
+  {{ deal.tags }}
+
+  {{ deal.latitude }}
+  {{ deal.longitude }}
+{% endcomment %}
+
+</div>
+
+<div>
+
+    {% if must_login_error %}
+        <div class="error-box">
+            <div class="title">An account already exists for {{ must_login_email }}. Please sign in first.</div>
+        </div>
+    {% endif %}
+
+    {% if form.errors %}
+        <div class="error-box">
+            <div class="title">There was a problem, please see the error messages below.</div>
+            <div>Please correct fields marked with a red box.</div>
+        </div>
+    {% endif %}
+
+<form  class="dealcheckoutform" id="id_dealcheckoutform" method="POST" >
+  <div id="quantity_box"><span>{{ deal.title }}</span><span>{{ form.quantity }}</span><span> x {{ deal.deal_price }} = </span><span id="id_estimate" style="color: #3a3; font-size: 170%;">$0.00</span></div>
+
+
+  <div class="clearfix">
+    <div style="font-weight: bold; font-size: 120%; margin-bottom: 10px;">Personal Information</div>
+    <div class="user_left" style="width: 300px; float: left;">
+      <div class="field"><label>Full Name:</label>{{ form.full_name }}<div class="error-msg">{% if form.errors.full_name %}Please enter your full name{% endif %}</div></div>
+
+      <div class="passwd_field"><span style="float:left; width: 140px;"><label style="display: block;">Password:</label>{{ form.password }}</span><span style="float:left;"><label style="display: block;">Password (confirm):</label>{{ form.password_verify }}</span><div class="error-msg">{% if form.errors.password %}{{ form.errors.password }}{% endif %}</div></div>
+
+{% comment %}
+      <div class="passwd_field"><label style="width: 100%; display:block;">Password:</label>{{ form.password }} Password (confirm):{{ form.password_verify }}</div>
+{% endcomment %}
+
+      <div class="field"><label>Email:</label>{{ form.email }}<div class="error-msg">{% if form.errors.email %}Please enter your email{% endif %}</div></div>
+    </div>
+
+    <div class="right" style="width: 400px; float: left; background: #DDEDCC">
+      <div>
+        Already have an Account?
+      </div>
+    </div>
+  </div>
+
+<br><br>
+
+<div class="clearfix">
+  <div style="font-weight: bold; font-size: 120%; margin-bottom: 10px;">Billing Information</div>
+
+  <div id="leftbox" style="float: left; width: 300px;">
+    <div class="field"><label>Cardholder Name:</label>{{ form.cardholder_name }}<div class="error-msg">{% if form.errors.cardholder_name %}Please enter the name on your credit card{% endif %}</div></div>
+    <div class="field"><label>Card Type:</label>{{ form.type }}</div>
+    <div class="field"><label>Number:</label>{{ form.number }}<div class="error-msg">{% if form.errors.number %}Please enter your credit card number{% endif %}</div></div>
+    <div class="double_field"><label style="width: 100%; display:block;">Expiration Date:</label>{{ form.expiry_month }} {{ form.expiry_year }}</div>
+    <div class="field"><label>Security Code:</label>{{ form.security }}<div class="error-msg">{% if form.errors.security %}Please enter the CVV on the back of your credit card{% endif %}</div></div>
+  </div>
+  <div id="rightbox" style="float: left;">
+    <div class="field"><label>Billing Address:</label>{{ form.billing_address }}<div class="error-msg">{% if form.errors.billing_address %}Please enter your billing address{% endif %}</div></div>
+    <div class="field"><label>City:</label>{{ form.city }}<div class="error-msg">{% if form.errors.city %}Please enter your billing city{% endif %}</div></div>
+    <div class="field"><label>Postal Code:</label>{{ form.postalcode }}<div class="error-msg">{% if form.errors.postalcode %}Please enter your postal code{% endif %}</div></div>
+    <div class="field"><label>Province:</label>{{ form.province }}</div>
+    <div class="field"><label>Country:</label>{{ form.country }}</div>
+  </div>
+</div>
+
+
+  <input type="submit"  value="Complete My Order" alt="Complete My Order" id="buy" onClick="submitForm(this.form);"/>
+</form>
+
+
+</div>
+
+
+{% endblock %}
